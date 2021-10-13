@@ -1,0 +1,202 @@
+.App {
+  text-align: center;
+  font-family:sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  border:0px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cabecalhoPrincipal .container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  height: 100px;
+} 
+
+.cabecalhoPrincipal-titulo {
+  margin-left: 5%;
+
+}
+
+.cabecalhoPrincipal-titulo>h1 {
+  color: white;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.cabecalhoPrincipal-titulo>h3 {
+  color: white;
+  margin: 0px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.cabecalhoPrincipal-nav {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  margin-right: 5%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.cabecalhoPrincipal-nav>a {
+  align-items: center;
+  color: white;
+  
+  height: fit-content;
+}
+
+
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: rgba(0,0,0,80%);
+}
+
+.primeira-sessao {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.primeira-sessao .bemvindo {
+  width: 60%;
+  background-color: white;
+}
+
+
+.segunda-sessao {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.segunda-sessao .foto {
+  width: 60%;
+  background-color: white;
+}
+
+.foto>h2 {
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.foto>h3 {
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.terceira-sessao {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+}
+
+.caixas1 {
+  display: flex;
+  width: 66%;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.caixas1>div{
+  background-color: white;
+  width: 31%;
+}
+
+
+.caixas2 {
+  display: flex;
+  width: 66%;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.caixas2>div{
+  background-color: white;
+  width: 31%;
+}
+
+
+.quarta-sessao {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  height: 200px;
+}
+
+
+
+
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: darkgray;
+} 
+
+.container-footer .container-nome{
+  display:flex;
+  justify-content: center;
+}
