@@ -70,7 +70,7 @@ html {
   margin: 0px;
   margin-left: 15px;
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .cabecalhoPrincipal-nav {
@@ -78,13 +78,14 @@ html {
   justify-content:space-around;
   align-items: center;
   height: 100%;
-  width: 30%;
+  width: 15%;
   margin-right: 5%;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
 .cabecalhoPrincipal-nav>a {
+  text-decoration: none;
   align-items: center;
   color: white;
   
@@ -110,8 +111,13 @@ html {
 }
 
 .primeira-sessao .bemvindo {
-  width: 60%;
+  width: 80%;
   background-color: white;
+  text-align: center;
+}
+
+.primeira-sessao .bemvindo > h1 {
+  font-size: 35px;
 }
 
 
@@ -124,8 +130,16 @@ html {
   flex-direction: column;
 }
 
+.segunda-sessao>div>h2 {
+  color: rgba(0, 0, 0, 0.637);
+}
+
+.segunda-sessao>div>h3 {
+  color:rgba(0, 0, 0, 0.637);
+}
+
 .segunda-sessao .foto {
-  width: 60%;
+  width: 80%;
   background-color: white;
 }
 
@@ -147,9 +161,21 @@ html {
   align-items: center;
 }
 
+.terceira-sessao > h1 {
+  text-align: left;
+}
+
+.terceira-sessao #area {
+  color: darkred;
+}
+
+.terceira-sessao #cargo {
+  color: darkblue;
+}
+
 .caixas1 {
   display: flex;
-  width: 66%;
+  width: 80%;
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
@@ -163,7 +189,7 @@ html {
 
 .caixas2 {
   display: flex;
-  width: 66%;
+  width: 80%;
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
@@ -183,9 +209,6 @@ html {
   align-items: center;
   height: 200px;
 }
-
-
-
 
 
 .container-footer {
