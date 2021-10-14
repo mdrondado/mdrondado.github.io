@@ -108,12 +108,14 @@ html {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .primeira-sessao .bemvindo {
   width: 80%;
   background-color: white;
-  text-align: center;
+  text-align: left;
 }
 
 .primeira-sessao .bemvindo > h1 {
@@ -159,10 +161,17 @@ html {
   background-color: white;
   width: 100%;
   align-items: center;
+  margin-bottom: 50px;
 }
 
-.terceira-sessao > h1 {
-  text-align: left;
+.caixas1 > div > h4{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.princiapl .postagens {
+  width: 100%;
+  align-items:left;
 }
 
 .terceira-sessao #area {
@@ -173,12 +182,22 @@ html {
   color: darkblue;
 }
 
+.caixas0 {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  align-content: flex-start;
+}
+
 .caixas1 {
   display: flex;
   width: 80%;
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
+  margin-bottom: 30px;
 }
 
 .caixas1>div{
@@ -186,6 +205,10 @@ html {
   width: 31%;
 }
 
+.caixas1 > div > img {
+  max-width: 300px;
+  max-height: auto;
+}
 
 .caixas2 {
   display: flex;
@@ -200,16 +223,33 @@ html {
   width: 31%;
 }
 
-
 .quarta-sessao {
   display: flex;
   flex-direction: column;
   background-color: white;
   width: 100%;
   align-items: center;
-  height: 200px;
 }
 
+.quinta-sessao {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.quinta-sessao .caixa3 {
+  display:flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: flex-start;
+}
+
+.caixa3 .textoin {
+  text-align: left;
+}
 
 .container-footer {
   display: flex;
