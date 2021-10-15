@@ -45,18 +45,23 @@ html {
   scroll-behavior: smooth;
 }
 
-.cabecalhoPrincipal .container-header {
+
+.cabecalhoPrincipal{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items:center;
   background-color: black;
   height: 100px;
 } 
 
-.cabecalhoPrincipal-titulo {
-  margin-left: 5%;
-
-}
+.cabecalhoPrincipal .container-header {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1000px;
+  } 
 
 .cabecalhoPrincipal-titulo>h1 {
   color: white;
@@ -77,12 +82,9 @@ html {
   display: flex;
   justify-content:space-around;
   align-items: center;
-  height: 100%;
   width: 15%;
-  margin-right: 5%;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
+
 
 .cabecalhoPrincipal-nav>a {
   text-decoration: none;
@@ -97,8 +99,18 @@ html {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  height: auto;
   flex-direction: column;
   color: rgba(0,0,0,80%);
+}
+
+.principal > hr {
+  max-width: 1000px;
+}
+
+.caixaCentro {
+  width: 80%;
+  max-width: 1000px;
 }
 
 .primeira-sessao {
@@ -110,10 +122,12 @@ html {
   flex-direction: column;
   margin-bottom: 50px;
   margin-top: 50px;
+  overflow:visible;
 }
 
 .primeira-sessao .bemvindo {
   width: 80%;
+  max-width: 1000px;
   background-color: white;
   text-align: left;
 }
@@ -185,42 +199,40 @@ html {
 .caixas0 {
   display: flex;
   width: 80%;
+  max-width: 1000px;
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
   align-content: flex-start;
 }
 
-.caixas1 {
+.caixas {
   display: flex;
   width: 80%;
+  max-width: 1000px;
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
-  margin-bottom: 30px;
 }
 
-.caixas1>div{
+.caixas>div{
   background-color: white;
   width: 31%;
+  margin-bottom: 40px;
 }
 
-.caixas1 > div > img {
-  max-width: 300px;
+.caixas > div > h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.caixas > div > p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.caixas > div > img {
   max-height: auto;
-}
-
-.caixas2 {
-  display: flex;
-  width: 80%;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-}
-
-.caixas2>div{
-  background-color: white;
-  width: 31%;
 }
 
 .quarta-sessao {
@@ -244,6 +256,7 @@ html {
   display:flex;
   flex-direction: column;
   width: 80%;
+  max-width: 1000px;
   align-items: flex-start;
 }
 
@@ -263,3 +276,4 @@ html {
   display:flex;
   justify-content: center;
 }
+
