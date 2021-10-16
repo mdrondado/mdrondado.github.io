@@ -63,19 +63,16 @@ html {
   max-width: 1000px;
   } 
 
-.cabecalhoPrincipal-titulo>h1 {
+.cabecalhoPrincipal-titulo > a > h3 {
+  text-decoration: none;
   color: white;
-  margin-left: 15px;
-  margin-top: 15px;
-  margin-bottom: 0px;
+  margin: auto;
 }
 
-.cabecalhoPrincipal-titulo>h3 {
+.cabecalhoPrincipal-titulo > a {
+  text-decoration: none;
   color: white;
-  margin: 0px;
-  margin-left: 15px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin: auto;
 }
 
 .cabecalhoPrincipal-nav {
@@ -86,14 +83,16 @@ html {
 }
 
 
-.cabecalhoPrincipal-nav>a {
+.cabecalhoPrincipal-nav > a {
   text-decoration: none;
   align-items: center;
   color: white;
-  
   height: fit-content;
 }
 
+.cabecalhoPrincipal-nav > a :hover {
+  text-decoration: underline;
+}
 
 .principal {
   display: flex;
@@ -110,7 +109,14 @@ html {
 
 .caixaCentro {
   width: 80%;
-  max-width: 1000px;
+  max-width: 1000px;  
+  align-items: center;
+}
+
+.caixaTexto > div {
+  width: 80%;
+  max-width: 1000px;  
+  align-items: center;
 }
 
 .primeira-sessao {
@@ -144,6 +150,12 @@ html {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
+
+.caixaTexto {
+  width: 80%;
+  max-width: 1000px;
+  text-align: justify;
 }
 
 .segunda-sessao>div>h2 {
@@ -262,6 +274,10 @@ html {
 
 .caixa3 .textoin {
   text-align: left;
+}
+
+.footer-main {
+  width:100%;
 }
 
 .container-footer {
