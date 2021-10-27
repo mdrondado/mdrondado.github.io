@@ -1,8 +1,4 @@
-.App {
-  text-align: center;
-  font-family:sans-serif;
-  line-height: 1.5;
-}
+/******* START styles applyied in all pages *******/
 
 body {
   margin: 0px;
@@ -10,43 +6,19 @@ body {
   border:0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
+  text-align: center;
+  font-family:sans-serif;
+  line-height: 1.5;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-
-.cabecalhoPrincipal{
+.App header{
   display: flex;
   align-items:center;
   background-color: black;
@@ -57,9 +29,8 @@ html {
   display: flex;
   margin: auto;
   align-items: center;
-  align-self: center;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   max-width: 1000px;
   } 
 
@@ -82,7 +53,6 @@ html {
   width: 15%;
 }
 
-
 .cabecalhoPrincipal-nav > a {
   text-decoration: none;
   align-items: center;
@@ -94,186 +64,27 @@ html {
   text-decoration: underline;
 }
 
+nav .selecionado{
+  color: black; 
+  padding: 5px; 
+  background-color: white;
+  border-radius: 10px;
+}
+
+nav .naoselecionado{
+  color: white; 
+  padding: 5px; 
+  background-color: black"
+}
+
 .principal {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   height: auto;
   flex-direction: column;
   color: rgba(0,0,0,80%);
-}
-
-.principal > hr {
-  max-width: 1000px;
-}
-
-.caixaCentro {
-  width: 80%;
-  max-width: 1000px;  
-  align-items: center;
-}
-
-.caixaTexto > div {
-  width: 80%;
-  max-width: 1000px;  
-  align-items: center;
-}
-
-.primeira-sessao {
-  width: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  overflow:visible;
-}
-
-.primeira-sessao .bemvindo {
-  width: 80%;
-  max-width: 1000px;
-  background-color: white;
-  text-align: left;
-}
-
-.primeira-sessao .bemvindo > h1 {
-  font-size: 35px;
-}
-
-
-.segunda-sessao {
-  width: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-
-.caixaTexto {
-  width: 80%;
-  max-width: 1000px;
-  text-align: justify;
-}
-
-.segunda-sessao>div>h2 {
-  color: rgba(0, 0, 0, 0.637);
-}
-
-.segunda-sessao>div>h3 {
-  color:rgba(0, 0, 0, 0.637);
-}
-
-.segunda-sessao .foto {
-  width: 80%;
-  background-color: white;
-}
-
-.foto>h2 {
-  margin: 0px;
-  margin-top: 10px;
-}
-
-.foto>h3 {
-  margin: 0px;
-  margin-top: 10px;
-}
-
-.terceira-sessao {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.caixas1 > div > h4{
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-.princiapl .postagens {
-  width: 100%;
-  align-items:left;
-}
-
-.terceira-sessao #area {
-  color: darkred;
-}
-
-.terceira-sessao #cargo {
-  color: darkblue;
-}
-
-.caixas0 {
-  display: flex;
-  width: 80%;
-  max-width: 1000px;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-  align-content: flex-start;
-}
-
-.caixas {
-  display: flex;
-  width: 80%;
-  max-width: 1000px;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-}
-
-.caixas>div{
-  background-color: white;
-  width: 31%;
-  margin-bottom: 40px;
-}
-
-.caixas > div > h4 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.caixas > div > p {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.caixas > div > img {
-  max-height: auto;
-}
-
-.quarta-sessao {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  width: 100%;
-  align-items: center;
-}
-
-.quinta-sessao {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-color: white;
-  align-items: center;
-  margin-bottom: 150px;
-}
-
-.quinta-sessao .caixa3 {
-  display:flex;
-  flex-direction: column;
-  width: 80%;
-  max-width: 1000px;
-  align-items: flex-start;
-}
-
-.caixa3 .textoin {
-  text-align: left;
+  margin-top: 150px;
+  margin-bottom: 300px;
 }
 
 .footer-main {
@@ -292,4 +103,126 @@ html {
   display:flex;
   justify-content: center;
 }
+
+.container-sessao {
+  width: 100%;
+  max-width: 1000px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  overflow:visible;
+}
+
+.margin-bottom{
+  margin-bottom: 100px;
+}
+
+
+/******* END styles applyied in all pages *******/
+
+/******* START styles for index.html *******/
+
+
+.container-sessao .bemvindo {
+  text-align: left;
+}
+
+.container-sessao > hr{
+  width: 100%; 
+  color: rgba(211, 211, 211, 0.945);
+}
+
+.container-sessao .caixa-post{
+  width: 100%;
+  text-align: left;
+}
+
+.caixas {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.caixas>div{
+  width: 31%;
+  margin-bottom: 40px;
+}
+
+.caixas > div > h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.caixas > div > p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.caixas > div > img {
+  max-height: auto;
+}
+
+.container-sessao .relevantes {
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  align-items: flex-start;
+}
+
+.relevantes .textoin {
+  text-align: left;
+}
+
+/******* END styles for index.html *******/
+
+/******* START styles for curriculo.html *******/
+
+.caixaCentro {
+  width: 100%;
+  align-items: center;
+}
+
+.container-sessao>div {
+  color: rgba(0,0,0,80%);
+}
+
+#area {  
+  color: darkred;  
+}
+
+#cargo {  
+  color: darkblue;  
+}
+
+/******* END styles for curriculo.html *******/
+
+
+/******* START styles for cinfo.html *******/
+
+.caixaCurriculo {
+  width: 100%;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#curriculoanima {
+  margin-bottom: 150px;
+}
+
+/******* END styles for cinfo.html *******/
+
+/******* START styles for mmetro.html *******/
+
+.caixaTexto {
+  width: 100%;
+  max-width: 1000px;
+  text-align: justify;
+}
+
+/******* END styles for mmetro.html *******/
 
