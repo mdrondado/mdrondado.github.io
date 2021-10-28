@@ -1,5 +1,10 @@
 /******* START styles applyied in all pages *******/
 
+:root {
+  --vermelho: #E50914;
+  --preto: #141414;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -124,9 +129,12 @@ nav .naoselecionado{
 
 /******* START styles for index.html *******/
 
-
 .container-sessao .bemvindo {
   text-align: left;
+}
+
+.bemvindo h1{
+  margin-top: 0px;
 }
 
 .container-sessao > hr{
@@ -207,7 +215,6 @@ nav .naoselecionado{
 .caixaCurriculo {
   width: 100%;
   align-items: center;
-  margin-top: 50px;
 }
 
 #curriculoanima {
