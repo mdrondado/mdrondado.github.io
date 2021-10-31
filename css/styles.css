@@ -88,7 +88,7 @@ nav .naoselecionado{
   height: auto;
   flex-direction: column;
   color: rgba(0,0,0,80%);
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 300px;
 }
 
@@ -121,7 +121,7 @@ nav .naoselecionado{
 }
 
 .margin-bottom{
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 
@@ -157,7 +157,7 @@ nav .naoselecionado{
 
 .caixas>div{
   width: 31%;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .caixas > div > h4 {
@@ -172,6 +172,25 @@ nav .naoselecionado{
 
 .caixas > div > img {
   max-height: auto;
+}
+
+.caixa-aula{
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+}
+
+.caixa-aula .aula-texto {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.caixa-aula div h3{
+  margin-top: 0px;
+}
+
+#contato {
+  font-weight: 600;
 }
 
 .container-sessao .relevantes {
