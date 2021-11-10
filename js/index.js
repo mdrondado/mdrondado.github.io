@@ -10,3 +10,7 @@ function alterarPagina(paginaAberta){
     document.getElementById('tituloprofissi').textContent = 'Logistics, Transportation and Technology Professional';
   }
 }
+
+const nome = 'Gama Academy' ; 
+console . log ( nome . padStart ( 13 ) ) ; 
+console . log ( nome . padStart ( 2 ) ) ;
