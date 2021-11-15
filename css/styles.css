@@ -36,8 +36,12 @@ html {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1050px;
   } 
+
+.cabecalhoPrincipal-titulo {
+  margin-left: 25px;
+}
 
 .cabecalhoPrincipal-titulo > a > h3 {
   text-decoration: none;
@@ -48,19 +52,18 @@ html {
 .cabecalhoPrincipal-titulo > a {
   text-decoration: none;
   color: white;
-  margin: auto;
 }
 
 .cabecalhoPrincipal-nav {
   display: flex;
   justify-content:space-around;
   align-items: center;
-  width: 15%;
+  margin-right: 25px;
+
 }
 
 .cabecalhoPrincipal-nav > a {
   text-decoration: none;
-  align-items: center;
   color: white;
   height: fit-content;
 }
@@ -111,7 +114,8 @@ nav .naoselecionado{
 
 .container-sessao {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
+
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -131,6 +135,8 @@ nav .naoselecionado{
 
 .container-sessao .bemvindo {
   text-align: left;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .bemvindo h1{
@@ -138,8 +144,9 @@ nav .naoselecionado{
 }
 
 .container-sessao > hr{
-  width: 100%; 
-  color: rgba(211, 211, 211, 0.945);
+  width: 95%;
+  max-width: 1050px; 
+  color: rgba(139, 139, 139, 0.5);
 }
 
 .container-sessao .caixa-post{
@@ -147,46 +154,80 @@ nav .naoselecionado{
   text-align: left;
 }
 
-.caixas {
+.caixa-post div{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.container-frames {
   display: flex;
   width: 100%;
-  max-width: 1000px;
-  flex-direction: row;
-  justify-content: space-between;
+  max-width: 1100px;
 }
 
-.caixas>div{
-  width: 31%;
+.container-frames div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 25px;
+}
+
+.container-frames iframe{
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+.images-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.images-box>div{
+  width: 310px;
   margin-bottom: 0px;
+  margin-left: 25px;
 }
 
-.caixas > div > h4 {
+.images-box > div > h4 {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.caixas > div > p {
+.images-box > div > p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.caixas > div > img {
+.images-box > div > a > img {
   max-height: auto;
+  transition: .3s ease all;
+}
+
+.images-box > div > a > img:hover{
+  transform: 0.5;
+  opacity: 70%;
 }
 
 .caixa-aula{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   align-self: flex-start;
 }
 
-.caixa-aula .aula-texto {
-  text-align: left;
-  margin-left: 30px;
+.caixa-aula div {
+  margin-left: 25px;
 }
 
 .caixa-aula div h3{
   margin-top: 0px;
+}
+
+.caixa-aula .aula-texto {
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 #contato {
@@ -196,14 +237,20 @@ nav .naoselecionado{
 .container-sessao .relevantes {
   display:flex;
   flex-direction: column;
+
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
   align-items: flex-start;
 }
 
-.relevantes .textoin {
+.relevantes div {
   text-align: left;
+  margin-left: 25px;
+  margin-right: 25px;
 }
+
+
+
 
 /******* END styles for index.html *******/
 
