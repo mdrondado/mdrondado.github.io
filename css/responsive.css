@@ -6,6 +6,15 @@
     .container-frames div iframe{
         text-align: left;
     }
+
+    .texts-box div{
+        margin-bottom: 25px;
+    }
+
+    .images-box div {
+        margin-bottom: 20px;
+    }
+
 }
 
 

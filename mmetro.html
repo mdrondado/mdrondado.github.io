@@ -11,22 +11,25 @@
         content="Mini Metro é um um jogo de puzzle (quebra-cabeças) onde objetivo é gerenciar transporte de símbolos na rede">
     <title>Maikom Rondado : : WebSite</title>
     <link href="css/styles.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
 </head>
 <body>
     <div class="App">
         <header class="cabecalhoPrincipal">
             <div class="container-header">
-              <div class="cabecalhoPrincipal-titulo">
-                <a href="index.html"><h3>Rondado</h3></a>
-                <a href="index.html"><h3>Maikom's website</h3></a>
-              </div>
-    
-              <nav class="cabecalhoPrincipal-nav">
-                <a class="naoselecionado" href="index.html">Home</a>
-                <a class="naoselecionado"  href="curriculo.html" >Currículo</a>
-              </nav>
-            </div>
-        </header>
+                <div class="cabecalhoPrincipal-titulo">
+                   <a href="index.html"><h3>Rondado</h3></a>
+                   <a href="index.html"><h3>Maikom's website</h3></a>
+                </div>
+            
+                <nav class="cabecalhoPrincipal-nav">
+                   <a class="naoselecionado" href="index.html">Home</a>
+                   <a class="naoselecionado" id="curriculo" href="curriculo.html">
+                      Currículo
+                   </a>
+                </nav>
+             </div>
+            </header>
   
         <div class="principal">
             <div class="container-sessao">
@@ -34,15 +37,17 @@
                     <h1>Mini Metro</h1>
                     <hr style="width: 100px; margin-bottom: 30px;">
                     <br>
-                    <img src=images\metroLargo.jpg alt="Foto" width="400px" height="200px" />               
-                    <br>
+                    <div >
+                        <img class="mm-image" src=images\metroLargo.jpg alt="Foto" width=100% height=100% />
+                    </div>
+                </div>
+                <div class="texts-image">
                     <p>
                         Um quebra-cabeças básico de transportes que ao mesmo tempo se torna complexo.
                     </p>
-                    <br>
                 </div>
-
-                <div class="caixaTexto">
+                
+                <div class="texts-box">
                     <p>
                     Mini metro é um jogo simples de estratégia ou puzzle (quebra-cabeças) que desafia a construir uma rede eficiente de transportes. 
                     Longe de ser um simulador de metrô, o estilo e gráficos do jogo são bem minimalistas. 
@@ -55,13 +60,17 @@
                 </div>
 
                 <div class="caixaCentro">
-                    <img src=images\minimapa.png alt="Foto" width="450px" height="250px"/>
-                    <p>
-                    Principais elementos do jogo são símbolos simples
-                    </p>
-                    <br>
+                    <div>
+                        <br>
+                        <img class="mm-image" src=images\minimapa.png alt="Foto" width=100% height=100%/>
+                    </div>
                 </div>
-                <div class="caixaTexto">
+                <div class="texts-image">
+                    <p>
+                        Principais elementos do jogo são símbolos simples
+                    </p>
+                </div>
+                <div class="texts-box">
                     <p>
                     As estações podem ser conectadas desenhando-se uma linha entre elas. 
                     Ao conectar duas estações através de uma linha, um vagão também é criado e irá iniciar o transporte entre estas estações. 
@@ -82,17 +91,23 @@
                 
                 <div class="caixaCentro">
                     <br>
-                    <img src=images\mmetro2.gif alt="Foto" width="450px" height="250px" />               
+                    <div>
+                        <img class="mm-image" src=images\mmetro2.gif alt="Foto" width=100% height=100% />
+                    </div>
+                </div>
+                <div class="texts-image">
                     <p>
                         Animação divulgando o game
                     </p>
-                    <br>
+                </div>
+                
+                <div class="texts-box">
                     <p style="text-align: justify;">
                         Este jogo "indie" (criado por desenvolvedores independentes) recebeu vários prêmios e possui uma excelente avaliação estando a venda nas principais plataformas de comercialização de jogos e aplicativos. 
                     </p>
                     <p style="text-align: justify;">
-                        Uma pequena amostra pode ser verificada numa versão gratuíta, disponível através deste 
-                        <a href="https://www.coolmathgames.com/0-mini-metro-london" target="_blank">LINK</a>.
+                        Uma pequena amostra pode ser verificada numa  
+                        <a href="https://www.coolmathgames.com/0-mini-metro-london" target="_blank">versão gratuíta</a>.
                     </p>
                 </div>
             </div>
