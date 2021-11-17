@@ -66,6 +66,7 @@ html {
   text-decoration: none;
   color: white;
   height: fit-content;
+  margin-left: 10px;
 }
 
 .cabecalhoPrincipal-nav > a :hover {
@@ -105,6 +106,7 @@ nav .naoselecionado{
   justify-content: center;
   color: black;
   background-color: darkgray;
+  height: 100px;
 } 
 
 .container-footer .container-nome{
@@ -114,7 +116,7 @@ nav .naoselecionado{
 
 .container-sessao {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1050px;
 
   background-color: white;
   display: flex;
@@ -186,7 +188,7 @@ nav .naoselecionado{
 
 .images-box>div{
   width: 310px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   margin-left: 25px;
 }
 
@@ -239,7 +241,7 @@ nav .naoselecionado{
   flex-direction: column;
 
   width: 100%;
-  max-width: 1100px;
+  max-width: 1050px;
   align-items: flex-start;
 }
 
@@ -256,9 +258,30 @@ nav .naoselecionado{
 
 /******* START styles for curriculo.html *******/
 
+.texts-box {
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.texts-image{
+  width: 90%;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.texts-box div {
+  width: 300px;
+}
+
 .caixaCentro {
-  width: 100%;
   align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .container-sessao>div {
@@ -277,6 +300,10 @@ nav .naoselecionado{
 
 
 /******* START styles for cinfo.html *******/
+
+.curriculo-anima{
+  height: auto;
+}
 
 .caixaCurriculo {
   width: 100%;
@@ -297,5 +324,26 @@ nav .naoselecionado{
   text-align: justify;
 }
 
+.mm-image {
+  max-width: 450px;
+  max-height: 450px;
+}
+
+
 /******* END styles for mmetro.html *******/
+
+
+#botao-acesso {
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: white; 
+  background-color: rgb(29, 29, 206);
+  border-radius: 10px;
+  transition: .3s ease all;
+}
+
+#botao-acesso:hover{
+  background-color: rgb(73, 73, 255);
+}
 
