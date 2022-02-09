@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head profile="http://www.w3.org/2005/10/profile">
-   <link rel="icon" 
-      type="image/png" 
-      href="images\favicon.gif">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" 
-      content="Website pessoal de Maikom Rondado com conteúdos profissionais e pessoais ligados a tecnologia da informação e logística">
-   <title>Maikom Rondado : : WebSite</title>
-   <link href="css/styles.css" rel="stylesheet">
-   <link href="css/responsive.css" rel="stylesheet">
-   <script src="js/index.js"></script>
-</head>
+   <link rel="icon" type="image/png" href="images\favicon.gif">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description"
+         content="Website pessoal de Maikom Rondado com conteúdos profissionais e pessoais ligados a tecnologia da informação e logística">
+      <title>Rondado : : WebSite</title>
+      <link href="css/styles.css" rel="stylesheet">
+      <link href="css/responsive.css" rel="stylesheet">
+      <script src="js/index.js"></script>
+   </head>
 
 <body>
    <div class="App">
       <header class="cabecalhoPrincipal">
          <div class="container-header">
             <div class="cabecalhoPrincipal-titulo">
-               <a href="index.html"><h3>Rondado</h3></a>
-               <a href="index.html"><h3>Maikom's website</h3></a>
+               <a href="index.html">
+                  <h3>Rondado</h3>
+               </a>
+               <a href="index.html">
+                  <h3>Maikom's website</h3>
+               </a>
             </div>
-        
+
             <nav class="cabecalhoPrincipal-nav">
                <a class="selecionado" href="index.html">Home</a>
                <a class="naoselecionado" id="curriculo" href="curriculo.html" onclick="alterarPagina(curriculo)">
@@ -33,17 +37,18 @@
          </div>
       </header>
   
-      <div class="principal">
+      <div class="principal margin-bottom">
 			<div class="container-sessao margin-bottom">
 				<div class="bemvindo">
-					<h1>Bem vindo!</h1>
+					<div><h1>Bem vindo!</h1></div>
+               <p></p>
 					<p>
-                  <!--<a href="#" onclick="alteraBotao()">ingles</a> -->
+                  <!-- <a href="#" onclick="alteraBotao()">ingles</a> -->
 						Meu nome é Maikom R. O. Rondado e sou profissional de logística e tecnologia da informação.
                   <br>Este é um local onde mantenho atualizado histórico profissional e alguns hobbies ligados a estas áreas.
 					</p>
 					<p>
-						Sou graduado em Gestão de Logística e Transportes e sempre trabalhei nestas áreas onde obtive conhecimento generalista, porém meus maiores interesses estão ligados a gestão de pedidos, de processos e visualização de dados.
+						Sou graduado em Gestão de Logística e Transportes e sempre trabalhei nestas áreas onde obtive conhecimento generalista. Minhas maiores experiências estão ligadas a gestão de pedidos, projetos e processos, e visualização de dados.
                   <br> 
                   Devido ao meu interesse por <i>frameworks</i> de gestão, sistemas de informação e bancos de dados fiz pós graduação em Gestão e Governança de Tecnologia da Informação.
                </p>
@@ -51,14 +56,15 @@
          </div>
           
          <div class="container-sessao margin-bottom">
-            <hr>
-				<div class="caixa-post">
-					<div><h2>Postagens:</h2></div>
+            <!-- <hr> -->
+            <div class="caixa-post">
+					<div><h2>Postagens</h2></div>
 				</div>
+            <p></p>
 				<div class="images-box">
                <div>
                   <a href="cinfo.html">
-                     <img src="images\cinfo.jpg" height="180px" width="310px">
+                     <img src="images\cinfo.jpg" height="180px" width="310px" alt="imagem link para acesso a um currículo feito com animação">
                   </a>               
                   <p>
                   <h4>Outro Currículo</h4>
@@ -68,7 +74,7 @@
                   </p>  
                </div>
                <div>
-                  <a href="mmetro.html"><img src="images\mmetro.jpg" height="180px" width=310px></a>
+                  <a href="mmetro.html"><img src="images\mmetro.jpg" height="180px" width=310px alt="imagem link para acesso a comentário sobre jogo mini metro"></a>
                   <p>
                   <h4>Mini Metro</h4>
                   </p>
@@ -82,7 +88,7 @@
             </div>
             <div class="images-box">
                <div>
-                  <a href="entopics.html"><img src="images\etable.gif" height="180px" width="310px"></a>
+                  <a href="entopics.html"><img src="images\etable.gif" height="180px" width="310px" alt="imagem link para acesso à tabela com tópicos de inglês"></a>
                   <p>
                      <h4>English relevant topics</h4>
                   </p>
@@ -108,55 +114,54 @@
          </div>
 
          <div class="container-sessao margin-bottom">
-            <hr>
-				<div class="caixa-post">
-					<div><h2>Serviços que ofereço:</h2></div>
-				</div>
-				<div class="caixa-aula">
+            <!-- <hr> -->
+
+            <!-- <p></p> -->
+            <div class="relevantes">
+               <div><h2>Coaching internet, softwares e idiomas</h2></div>
+            </div>
+            <p></p>
+            <div class="caixa-aula">
                <div>
                   <a>
-                     <img src="images\office.jpg" height="230px" width="300px">
+                     <img src="images\office.jpg" height="230px" width="300px" alt="imagem de alguns softwares que o autor disponibiliza coaching">
                   </a>               
                   <p>
                </div>
                <div class="aula-texto">
-                  <h3>Aulas Particulares de Informática</h3>
+                  <p>
+                     Primeira orientação-aula gratuíta
                   </p>
                   <p>
-                     Do Básico ao Avançado
-                  </p>
-                  <p>
-                     Domicílio e a Distância
+                     Segundo idioma (inglês e espanhol)
                   </p>  
                   <p>
-                     Microsoft Office (Excel, Access, Word e PowerPoint)
+                     Ms Office e qualquer software atual
                   </p>
                   <p>
-                     Microsoft Windows
+                     Criação de websites personalizados
                   </p>
-                  <p id="contato">
-                     WhatsApp: 11-96321-6857
+                  <p>
+                     <a href="#contatos"><b>Meus contatos <b style="font-size:20px">&#128071</b></b></a>
                   </p>
                </div>
             </div>
          </div>
             
          <div class="container-sessao">
-            <hr>
             <div class="relevantes">
+               <div><h2>Vídeos</h2></div>
+               <p></p>
                <div>
-                  <h2>Insights e temas relevantes:</h2>
-               </div>
-               <div>
-                  Vídeos selecionados sobre temas de logística, transportes, cadeia de suprimentos e tecnologia.
-                  <br>O critério de seleção foi simplicidade de explicação do tema sendo que geralmente estas características estão presentes em vídeos em inglês.
+                  Sobre temas de logística, cadeia de suprimentos e tecnologia.
+                  <br>O critério de seleção foi simplicidade de explicação e geralmente estas características estão presentes em vídeos em inglês.
                   <br>IMPORTANTE: para assistir em uma resolução maior clique no play e depois no símbolo do YouTube.
                <p><br></p>
                </div>
                </div>
             </div>
 
-            <div class="container-frames">
+            <div class="container-frames margin-bottom">
                <div>
                   <iframe width="310" height="180" 
                      src="https://www.youtube.com/embed/4EDYfSl-fmc" 
@@ -184,16 +189,51 @@
                   </iframe>  
                </div>
             </div>
+
+      <!-- can be implemented as a component -->
+      <div class="container-contatos margin-bottom">
+         <div id="contatos">
+            <a href="https://wa.me/5511963216857">         
+               <img src="images\logo-whatsapp.png" height="50px" width="50px" alt="imagem link para acesso ao whatsapp do autor">
+               <br>
+               <b>Whatsapp</b>
+            </a>
          </div>
+         <div>
+            <a href="https://www.linkedin.com/in/maikomrondado/">         
+               <img src="images\logo-linkedin.png" height="50px" width="50px" alt="imagem link para acesso ao linkedin do autor">
+               <br>
+               <b>Linkedin</b>
+            </a>
+         </div>
+         <div>
+            <a href="https://www.facebook.com/maikom.rondado">          
+               <img src="images\logo-facebook.png" height="50px" width="50px" alt="imagem link para acesso ao facebook do autor">
+               <br>
+               <b>Facebook</b>
+            </a>
+         </div>
+         <div>
+            <a href="https://www.instagram.com/rondado.maikom/">           
+               <img src="images\logo-instagram.png" height="50px" width="50px" alt="imagem link para acesso ao instagram do autor">
+               <br>
+               <b>Instagram</b>
+            </a>
+         </div>
+      </div>
+      <!-- can be implemented as a component -->
+
+
+   </div>
 
         <footer class="footer-main">
           <div class="container-footer">
             <div class="container-nome">
-              <h5>Desenvolvido por Maikom © 2020</h5>
+              <h5>Desenvolvido por Maikom</h5>
             </div>
           </div>
         </footer>
-    </div>
+   </div>
 
 <!--          <div class="quarta-sessao">
 

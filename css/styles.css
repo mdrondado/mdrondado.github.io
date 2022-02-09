@@ -27,7 +27,7 @@ html {
   display: flex;
   align-items:center;
   background-color: black;
-  height: 100px;
+  height: 150px;
 } 
 
 .cabecalhoPrincipal .container-header {
@@ -93,7 +93,6 @@ nav .naoselecionado{
   flex-direction: column;
   color: rgba(0,0,0,80%);
   margin-top: 100px;
-  margin-bottom: 300px;
 }
 
 .footer-main {
@@ -148,7 +147,7 @@ nav .naoselecionado{
 .container-sessao > hr{
   width: 95%;
   max-width: 1050px; 
-  color: rgba(139, 139, 139, 0.5);
+  color: rgba(211, 211, 211, 0.89);
 }
 
 .container-sessao .caixa-post{
@@ -226,10 +225,19 @@ nav .naoselecionado{
   margin-top: 0px;
 }
 
-.caixa-aula .aula-texto {
+.aula-texto {
   text-align: left;
   margin-left: 25px;
   margin-right: 25px;
+}
+
+.aula-texto > p > a {
+  text-decoration: none;
+  color: rgba(0,0,0,80%);
+}
+
+.aula-texto > p > a:hover {
+  text-decoration: underline;
 }
 
 #contato {
@@ -251,7 +259,22 @@ nav .naoselecionado{
   margin-right: 25px;
 }
 
+.container-contatos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 400px;
+  margin-top: 50px;
+}
 
+.container-contatos>div>a {
+  text-decoration: none;
+  color: rgba(0,0,0,80%);
+}
+
+.container-contatos>div:hover {
+  text-decoration: underline;
+}
 
 
 /******* END styles for index.html *******/
@@ -277,6 +300,23 @@ nav .naoselecionado{
 .texts-box div {
   width: 300px;
 }
+
+.logotipos-empresas {
+  display: flex;
+  flex-direction: column;
+}
+
+.logotipos-empresas>div{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logotipos-empresas>div>img{
+  margin-left: 30px;
+}
+
 
 .caixaCentro {
   align-items: center;
@@ -314,6 +354,7 @@ nav .naoselecionado{
   margin-bottom: 150px;
 }
 
+
 /******* END styles for cinfo.html *******/
 
 /******* START styles for mmetro.html *******/
@@ -343,7 +384,7 @@ nav .naoselecionado{
   transition: .3s ease all;
 }
 
-#botao-acesso:hover{
+#botao-acesso:hover {
   background-color: rgb(73, 73, 255);
 }
 
