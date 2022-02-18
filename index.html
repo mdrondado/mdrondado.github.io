@@ -3,259 +3,286 @@
 
 <head profile="http://www.w3.org/2005/10/profile">
    <link rel="icon" type="image/png" href="images\favicon.gif">
-
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description"
-         content="Website pessoal de Maikom Rondado com conteúdos profissionais e pessoais ligados a tecnologia da informação e logística">
-      <title>Rondado : : WebSite</title>
-      <link href="css/styles.css" rel="stylesheet">
-      <link href="css/responsive.css" rel="stylesheet">
-      <script src="js/index.js"></script>
-   </head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="Website pessoal de Maikom Rondado com conteúdos profissionais e pessoais ligados a tecnologia da informação e logística">
+   <title>
+      Rondado : : WebSite
+   </title>
+   <link href="css/styles.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+   <script src="js/index.js">
+   </script>
+</head>
 
 <body>
    <div class="App">
-      <header class="cabecalhoPrincipal">
+      <header>
          <div class="container-header">
-            <div class="cabecalhoPrincipal-titulo">
+            <div class="header-main-title">
                <a href="index.html">
-                  <h3>Rondado</h3>
-               </a>
-               <a href="index.html">
-                  <h3>Maikom's website</h3>
+                  <h3>
+                     Rondado
+                  </h3>
+                  <h3>
+                     Maikom's website
+                  </h3>
                </a>
             </div>
 
-            <nav class="cabecalhoPrincipal-nav">
-               <a class="selecionado" href="index.html">Home</a>
-               <a class="naoselecionado" id="curriculo" href="curriculo.html" onclick="alterarPagina(curriculo)">
-                  Currículo
+            <nav class="header-main-nav">
+               <a class="selected" href="index.html">
+                  Home
                </a>
+               <a class="not-selected" id="curriculum" href="curriculo.html">
+                  Currículo
+               </a> 
+               <!-- <a class="not-selected" id="personal" href="pessoal.html">
+                  Pessoal
+               </a> -->
             </nav>
          </div>
       </header>
   
-      <div class="principal margin-bottom">
-			<div class="container-sessao margin-bottom">
-				<div class="bemvindo">
-					<div><h1>Bem vindo!</h1></div>
-               <p></p>
-					<p>
-                  <!-- <a href="#" onclick="alteraBotao()">ingles</a> -->
-						Meu nome é Maikom R. O. Rondado e sou profissional de logística e tecnologia da informação.
-                  <br>Este é um local onde mantenho atualizado histórico profissional e alguns hobbies ligados a estas áreas.
-					</p>
-					<p>
-						Sou graduado em Gestão de Logística e Transportes e sempre trabalhei nestas áreas onde obtive conhecimento generalista. Minhas maiores experiências estão ligadas a gestão de pedidos, projetos e processos, e visualização de dados.
-                  <br> 
-                  Devido ao meu interesse por <i>frameworks</i> de gestão, sistemas de informação e bancos de dados fiz pós graduação em Gestão e Governança de Tecnologia da Informação.
-               </p>
-            </div>
-         </div>
+      <div class="principal">
+         <h1>
+            Bem vindo!
+         </h1>
+         <section class="welcome">
+            <p>
+               Meu nome é Maikom e sou profissional de logística com foco em tecnologia da informação (dados).
+               <br>Este é um local onde mantenho atualizado histórico profissional e alguns hobbies ligados a estas áreas.
+            </p>
+            <p>
+               Sou graduado em Gestão de Logística e Transportes e sempre trabalhei nestas áreas onde obtive conhecimento generalista. 
+               <br> Minhas maiores experiências estão ligadas a gestão de pedidos, projetos e processos, e visualização de dados.
+            </p>
+            <p>
+               Devido ao meu interesse por 
+               <i>
+                  frameworks
+               </i> 
+               de gestão, sistemas de informação e bancos de dados fiz pós graduação em 
+               <br>Gestão e Governança de Tecnologia da Informação.
+            </p>
+         </section>
           
-         <div class="container-sessao margin-bottom">
-            <!-- <hr> -->
-            <div class="caixa-post">
-					<div><h2>Postagens</h2></div>
-				</div>
-            <p></p>
-				<div class="images-box">
+         <h1>
+            Postagens
+         </h1>
+         <section>
+				<div class="lined-elements">
                <div>
-                  <a href="cinfo.html">
-                     <img src="images\cinfo.jpg" height="180px" width="310px" alt="imagem link para acesso a um currículo feito com animação">
+                  <a class="link-blog" href="cinfo.html">
+                     <img src="images\cinfo.jpg" height="180px" width="310px" 
+                        alt="imagem link para acesso a um currículo feito com animação">
                   </a>               
-                  <p>
-                  <h4>Outro Currículo</h4>
-                  </p>
-                  <p>
-                  Currículo um pouco diferente, criado através de um pequeno hobby
-                  </p>  
+                     <h4>
+                        Outro Currículo
+                     </h4>
+                     Currículo um pouco diferente, criado através de um pequeno hobby
                </div>
                <div>
-                  <a href="mmetro.html"><img src="images\mmetro.jpg" height="180px" width=310px alt="imagem link para acesso a comentário sobre jogo mini metro"></a>
-                  <p>
-                  <h4>Mini Metro</h4>
-                  </p>
-                  <p>
-                  Um quebra-cabeças básico de transportes que ao mesmo tempo pode se tornar complexo
-                  </p>
-               </div>
-               <div>
-                  <!--Elemento blog em branco-->
+                  <a class="link-blog" href="mmetro.html">
+                     <img src="images\mmetro.jpg" height="180px" width=310px 
+                        alt="imagem link para acesso a comentário sobre jogo mini metro">
+                  </a>
+                     <h4>
+                        Mini Metro
+                     </h4>
+                     Um quebra-cabeças básico de transportes que ao mesmo tempo pode se tornar complexo
                </div>
             </div>
-            <div class="images-box">
+            <div class="lined-elements">
                <div>
-                  <a href="entopics.html"><img src="images\etable.gif" height="180px" width="310px" alt="imagem link para acesso à tabela com tópicos de inglês"></a>
-                  <p>
-                     <h4>English relevant topics</h4>
-                  </p>
-                  <p>
+                  <a class="link-blog" href="entopics.html">
+                     <img src="images\etable.gif" height="180px" width="310px" 
+                        alt="imagem link para acesso à tabela com tópicos de inglês">
+                  </a>
+                     <h4>
+                        English relevant topics
+                     </h4>
                      Temas importantes para aperfeiçoar a língua inglesa                
-                  </p>
                </div>
                <div>
-                  <a href=""><img src="images\bgame.jpg" height="180px" width="310px"></a>
-                  <p>
-                     <h4>Beer Game</h4>
-                  </p>
-                  <p>
+                  <a class="link-blog" href="">
+                     <img src="images\bgame.jpg" height="180px" width="310px">
+                  </a>
+                     <h4>
+                        Beer Game
+                     </h4>
                      Famoso jogo de cadeia de suprimentos que simula alguns conceitos importantes
-                  </p>
                      <h5 style="color: white; align-items:center; padding: 5px; margin-top:10px; background: rgb(65, 65, 65)">Em construção
                   </h5>
                </div>
-               <div>
-                  <!--Elemento blog em branco-->
-               </div>
             </div>
-         </div>
+         </section>
 
-         <div class="container-sessao margin-bottom">
-            <!-- <hr> -->
-
-            <!-- <p></p> -->
-            <div class="relevantes">
-               <div><h2>Coaching internet, softwares e idiomas</h2></div>
-            </div>
-            <p></p>
-            <div class="caixa-aula">
+         <h1>
+            Coaching internet, softwares e idiomas
+         </h1>
+         <section>
+            <div class="lined-elements">
                <div>
-                  <a>
-                     <img src="images\office.jpg" height="230px" width="300px" alt="imagem de alguns softwares que o autor disponibiliza coaching">
-                  </a>               
-                  <p>
+                  <img src="images\english_espanol.jpg" height="230px" width="310px" 
+                     alt="imagem de alguns softwares que o autor disponibiliza coaching">
+                  <h3>Segundo idioma 
+                     <br>(inglês e espanhol)
+                  </h3>
+                  <p style="font-size:larger">
+                     Aulas
+                     <br>Tradução
+                     <br>Transcrição
+                  </p>
                </div>
-               <div class="aula-texto">
-                  <p>
-                     Primeira orientação-aula gratuíta
+
+               <div>
+                  <img src="images\tech01.jpg" height="230px" width="310px" 
+                     alt="imagem de alguns softwares que o autor disponibiliza coaching">
+                  <h3>
+                     Tecnologia para TODOS
+                     <br>(especial melhor-idade)
+                  </h3>
+                  <p style="font-size:larger">
+                     Qualquer aplicativo ou software
+                     <br>Celulares e Computadores
+                     <br>Didático com atenção a detalhes
                   </p>
-                  <p>
-                     Segundo idioma (inglês e espanhol)
-                  </p>  
-                  <p>
-                     Ms Office e qualquer software atual
-                  </p>
-                  <p>
-                     Criação de websites personalizados
-                  </p>
-                  <p>
-                     <a href="#contatos"><b>Meus contatos <b style="font-size:20px">&#128071</b></b></a>
+               </div>
+
+               <div>
+                  <img src="images\website_creation.jpg" height="230px" width="310px" 
+                     alt="imagem de alguns softwares que o autor disponibiliza coaching">
+                  <h3>Criação de websites
+                     <br>personalizados
+                  </h3>
+                  <p style="font-size:larger">
+                     With Coding
+                     <br>Low-Coding (Wix, outros)
+                     <br>Manutenção e Upgrade
                   </p>
                </div>
             </div>
-         </div>
+
+            <div class="link-contacts">
+               Presencial (sob avaliação) e via aplicativos:
+               <div>
+                  <img src="images\logo-zoom.png" height="100px" width="100px" 
+                     alt="imagem link para acesso ao whatsapp do autor">
+                  &nbsp &nbsp
+                  <img src="images\logo-skype.png" height="100px" width="130px" 
+                     alt="imagem link para acesso ao whatsapp do autor">
+               </div>             
+
+               <a href="#contacts" style="font-size:20px; font-weight:500">
+                     &#128071 Meus contatos &#128071
+               </a>
+            </div>
+         </section>
             
-         <div class="container-sessao">
-            <div class="relevantes">
-               <div><h2>Vídeos</h2></div>
-               <p></p>
-               <div>
-                  Sobre temas de logística, cadeia de suprimentos e tecnologia.
-                  <br>O critério de seleção foi simplicidade de explicação e geralmente estas características estão presentes em vídeos em inglês.
-                  <br>IMPORTANTE: para assistir em uma resolução maior clique no play e depois no símbolo do YouTube.
-               <p><br></p>
-               </div>
-               </div>
+         <h1>
+            Vídeos
+         </h1>
+         <section>
+            <p>
+               Sobre temas de logística, cadeia de suprimentos e tecnologia.
+               <br>O critério de seleção foi simplicidade de explicação e geralmente estas características estão presentes em vídeos em inglês.
+               <br>IMPORTANTE: para assistir em uma resolução maior clique no play e depois no símbolo do YouTube.
+            </p>
+            <div class="lined-elements">
+               <iframe width="310" height="180" 
+                  src="https://www.youtube.com/embed/4EDYfSl-fmc" 
+                  title="YouTube video player" frameborder="0" allowfullscreen>
+               </iframe>
+               <iframe width="310" height="180" 
+                  src="https://www.youtube.com/embed/RkPBiAUGo-M" 
+                  title="YouTube video player" frameborder="0" allowfullscreen>
+               </iframe>               
+               <iframe width="310" height="180" 
+                  src="https://www.youtube.com/embed/4Vf4x0RQd74" 
+                  title="YouTube video player" frameborder="0" allowfullscreen>
+               </iframe>               
+               <iframe width="310" height="180" 
+                  src="https://www.youtube.com/embed/VNK2X4Y1fss" 
+                  title="YouTube video player" frameborder="0" allowfullscreen>
+               </iframe>               
+               <iframe width="310" height="180" 
+                  src="https://www.youtube.com/embed/oqR6SV8ma_8" 
+                  title="YouTube video player" frameborder="0" allowfullscreen>
+               </iframe>               
+               <iframe width="310" height="180" 
+                  src="https://www.youtube.com/embed/5o2dN3_5Anc" 
+                  title="YouTube video player" frameborder="0" allowfullscreen>
+               </iframe>
             </div>
+         </section>
 
-            <div class="container-frames margin-bottom">
-               <div>
-                  <iframe width="310" height="180" 
-                     src="https://www.youtube.com/embed/4EDYfSl-fmc" 
-                     title="YouTube video player" frameborder="0" allowfullscreen>
-                  </iframe>
-                  <iframe width="310" height="180" 
-                     src="https://www.youtube.com/embed/RkPBiAUGo-M" 
-                     title="YouTube video player" frameborder="0" allowfullscreen>
-                  </iframe>               
-                  <iframe width="310" height="180" 
-                     src="https://www.youtube.com/embed/4Vf4x0RQd74" 
-                     title="YouTube video player" frameborder="0" allowfullscreen>
-                  </iframe>               
-                  <iframe width="310" height="180" 
-                     src="https://www.youtube.com/embed/VNK2X4Y1fss" 
-                     title="YouTube video player" frameborder="0" allowfullscreen>
-                  </iframe>               
-                  <iframe width="310" height="180" 
-                     src="https://www.youtube.com/embed/oqR6SV8ma_8" 
-                     title="YouTube video player" frameborder="0" allowfullscreen>
-                  </iframe>               
-                  <iframe width="310" height="180" 
-                     src="https://www.youtube.com/embed/5o2dN3_5Anc" 
-                     title="YouTube video player" frameborder="0" allowfullscreen>
-                  </iframe>  
-               </div>
-            </div>
-
-      <!-- can be implemented as a component -->
-      <div class="container-contatos margin-bottom">
-         <div id="contatos">
-            <a href="https://wa.me/5511963216857">         
-               <img src="images\logo-whatsapp.png" height="50px" width="50px" alt="imagem link para acesso ao whatsapp do autor">
+         <!-- can be implemented as a component -->
+         <div class="container-contatos">
+            <a id="contacts" href="https://wa.me/5511963216857">         
+               <img src="images\logo-whatsapp.png" height="50px" width="50px" 
+                  alt="imagem link para acesso ao whatsapp do autor">
                <br>
-               <b>Whatsapp</b>
+                  Whatsapp
             </a>
-         </div>
-         <div>
             <a href="https://www.linkedin.com/in/maikomrondado/">         
-               <img src="images\logo-linkedin.png" height="50px" width="50px" alt="imagem link para acesso ao linkedin do autor">
+               <img src="images\logo-linkedin.png" height="50px" width="50px" 
+                  alt="imagem link para acesso ao linkedin do autor">
                <br>
-               <b>Linkedin</b>
+                  Linkedin
             </a>
-         </div>
-         <div>
             <a href="https://www.facebook.com/maikom.rondado">          
-               <img src="images\logo-facebook.png" height="50px" width="50px" alt="imagem link para acesso ao facebook do autor">
+               <img src="images\logo-facebook.png" height="50px" width="50px" 
+                  alt="imagem link para acesso ao facebook do autor">
                <br>
-               <b>Facebook</b>
+                  Facebook
             </a>
-         </div>
-         <div>
             <a href="https://www.instagram.com/rondado.maikom/">           
-               <img src="images\logo-instagram.png" height="50px" width="50px" alt="imagem link para acesso ao instagram do autor">
+               <img src="images\logo-instagram.png" height="50px" width="50px" 
+                  alt="imagem link para acesso ao instagram do autor">
                <br>
-               <b>Instagram</b>
+                  Instagram
             </a>
          </div>
+         <!-- can be implemented as a component -->
+
       </div>
-      <!-- can be implemented as a component -->
 
-
+      <footer class="footer-main">
+         <div class="container-footer">
+            <h5 class="container-nome">
+               Desenvolvido com &nbsp
+               <img src="images\logo-vscode.gif" height="17px" width="17px"
+                  alt="imagem com logotipo vscode">&nbsp e &nbsp
+               <b style="font-size:15px">
+                  &#128536 
+               </b> 
+               &nbsp por Maikom
+            </h5>
+      </footer>
    </div>
 
-        <footer class="footer-main">
-          <div class="container-footer">
-            <div class="container-nome">
-              <h5>Desenvolvido por Maikom</h5>
+   <!--  
+      <div class="quarta-sessao">
+         <div class="contato">
+            <h1 id="contato">Contato</h1>
+               <form action="https://formsubmit.com/" method="POST" class="formulario">
+               <label>Nome:</label>
+               <input type="text" name="name" required>
+               <p></p>
+               <label>Email:</label>
+               <input type="email" name="email" required>
+               <p></p>
+               <label>Mensagem:</label>
+               <textarea name="message" rows="10" cols="30">Digite seu comentário aqui!</textarea>             
+               <p></p>
+               <button type="submit">Send</button>
+               </form>
             </div>
-          </div>
-        </footer>
-   </div>
-
-<!--          <div class="quarta-sessao">
-
-            <div class="contato">
-              <h1 id="contato">Contato</h1>
-                <form action="https://formsubmit.com/" method="POST" class="formulario">
-                  <label>Nome:</label>
-                  <input type="text" name="name" required>
-                  <p></p>
-                  <label>Email:</label>
-                  <input type="email" name="email" required>
-                  <p></p>
-                  <label>Mensagem:</label>
-                  <textarea name="message" rows="10" cols="30">Digite seu comentário aqui!</textarea>             
-                  <p></p>
-                  <button type="submit">Send</button>
-                </form>
-              </div>
-            </div>
- 
-          </div> 
--->
-
+         </div>
+      </div> 
+   -->
 </body>
+
 </html>

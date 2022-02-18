@@ -1,4 +1,12 @@
+/* * {
+  font-size: 16px;
+} */
+
 /******* START styles applyied in all pages *******/
+
+* {
+  box-sizing: border-box;
+}
 
 :root {
   --vermelho: #E50914;
@@ -19,68 +27,86 @@ body {
   flex-direction: column;
 }
 
+a:visited {
+  color: #141414;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+img {
+  border-radius: 6px;
+}
+
+footer {
+  margin-top: 150px;
 }
 
 .App header{
   display: flex;
   align-items:center;
   background-color: black;
-  height: 150px;
+  height: 200px;
 } 
 
-.cabecalhoPrincipal .container-header {
+header .container-header {
   display: flex;
+  flex-direction: column;
   margin: auto;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   max-width: 1050px;
-  } 
-
-.cabecalhoPrincipal-titulo {
-  margin-left: 25px;
+  height: 140px;
 }
 
-.cabecalhoPrincipal-titulo > a > h3 {
+.header-main-title > a > h3 {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.726);
   margin: auto;
 }
 
-.cabecalhoPrincipal-titulo > a {
+.header-main-title > a {
   text-decoration: none;
   color: white;
 }
 
-.cabecalhoPrincipal-nav {
+.header-main-nav {
   display: flex;
   justify-content:space-around;
   align-items: center;
-  margin-right: 25px;
-
 }
 
-.cabecalhoPrincipal-nav > a {
+.header-main-nav > a {
   text-decoration: none;
   color: white;
   height: fit-content;
   margin-left: 10px;
 }
 
-.cabecalhoPrincipal-nav > a :hover {
+.header-main-nav > a :hover {
   text-decoration: underline;
 }
 
-nav .selecionado{
+nav .selected{
   color: black; 
   padding: 5px; 
   background-color: white;
   border-radius: 10px;
 }
 
-nav .naoselecionado{
+nav .not-selected{
   color: white; 
   padding: 5px; 
   background-color: black"
@@ -92,7 +118,6 @@ nav .naoselecionado{
   height: auto;
   flex-direction: column;
   color: rgba(0,0,0,80%);
-  margin-top: 100px;
 }
 
 .footer-main {
@@ -113,169 +138,136 @@ nav .naoselecionado{
   justify-content: center;
 }
 
-.container-sessao {
-  width: 100%;
-  max-width: 1050px;
-
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  overflow:visible;
-}
-
-.margin-bottom{
+.margin-bottom {
   margin-bottom: 80px;
 }
 
-
+#photo-curriculum {
+  margin-top: 80px;
+}
 /******* END styles applyied in all pages *******/
 
 /******* START styles for index.html *******/
 
-.container-sessao .bemvindo {
-  text-align: left;
-  margin-left: 25px;
-  margin-right: 25px;
-}
+section {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   overflow: visible;
+   align-items: center;
+   justify-content: flex-start;
+    width: 100%;
+   max-width: 1100px;
+   padding: 0px 20px;
+ }
+ 
+ h1 {
+   margin-top: 100px;
+   margin-bottom: 40px;
+   width: 100%;
+   text-align: center;
+   padding: 0px 20px;
+ }
 
-.bemvindo h1{
-  margin-top: 0px;
-}
-
-.container-sessao > hr{
-  width: 95%;
-  max-width: 1050px; 
-  color: rgba(211, 211, 211, 0.89);
-}
-
-.container-sessao .caixa-post{
-  width: 100%;
-  text-align: left;
-}
-
-.caixa-post div{
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-.container-frames {
+.container-sessao {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: visible;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
   max-width: 1100px;
 }
 
-.container-frames div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-left: 25px;
+.lined-elements iframe{
+  margin: 10px;
 }
 
-.container-frames iframe{
-  margin-bottom: 25px;
-  margin-right: 25px;
-}
-
-.images-box {
+.lined-elements {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  justify-content:center;
   width: 100%;
-  justify-content: flex-start;
 }
 
-.images-box>div{
-  width: 310px;
+.lined-elements>div{
+  width: 330px;
   margin-bottom: 20px;
-  margin-left: 25px;
 }
 
-.images-box > div > h4 {
+.lined-elements > div > h4 {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.images-box > div > p {
+.lined-elements > div > p {
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.images-box > div > a > img {
+.lined-elements div h3{
+   margin: 5px 0px;
+ }
+
+.lined-elements p {
+   padding: 0px 10px;
+}
+
+.link-blog > img {
   max-height: auto;
   transition: .3s ease all;
 }
 
-.images-box > div > a > img:hover{
+.link-blog > img:hover {
   transform: 0.5;
   opacity: 70%;
 }
 
-.caixa-aula{
+.link-contacts {
   display: flex;
-  flex-wrap: wrap;
-  align-self: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 6px;
+  margin: 20px 0px;
+  background-color: rgb(219, 245, 255);
+  padding: 30px 60px;
+  height: 250px;
 }
 
-.caixa-aula div {
-  margin-left: 25px;
+.link-contacts a {
+   text-decoration: none;
+   font-style: 20px;
 }
 
-.caixa-aula div h3{
-  margin-top: 0px;
-}
-
-.aula-texto {
-  text-align: left;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-.aula-texto > p > a {
-  text-decoration: none;
-  color: rgba(0,0,0,80%);
-}
-
-.aula-texto > p > a:hover {
-  text-decoration: underline;
+.link-contacts a:hover {
+   text-decoration: underline;
 }
 
 #contato {
   font-weight: 600;
 }
 
-.container-sessao .relevantes {
-  display:flex;
-  flex-direction: column;
-
-  width: 100%;
-  max-width: 1050px;
-  align-items: flex-start;
-}
-
-.relevantes div {
-  text-align: left;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
 .container-contatos {
   display: flex;
   flex-direction: row;
+  align-self: center;
   justify-content: space-around;
   width: 400px;
-  margin-top: 50px;
+  margin-top: 130px;
 }
 
-.container-contatos>div>a {
+.container-contatos>a {
   text-decoration: none;
   color: rgba(0,0,0,80%);
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.container-contatos>div:hover {
+.container-contatos>a:hover {
   text-decoration: underline;
 }
-
 
 /******* END styles for index.html *******/
 
@@ -297,13 +289,10 @@ nav .naoselecionado{
   margin-bottom: 20px;
 }
 
-.texts-box div {
-  width: 300px;
-}
-
 .logotipos-empresas {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .logotipos-empresas>div{
@@ -311,12 +300,12 @@ nav .naoselecionado{
   align-items:center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0px 10px;
 }
 
 .logotipos-empresas>div>img{
-  margin-left: 30px;
+  margin: 10px;
 }
-
 
 .caixaCentro {
   align-items: center;
@@ -324,17 +313,14 @@ nav .naoselecionado{
   margin-right: 25px;
 }
 
-.container-sessao>div {
-  color: rgba(0,0,0,80%);
+.key-words {
+  padding: 0px 10px;
 }
 
 #area {  
   color: darkred;  
 }
 
-#cargo {  
-  color: darkblue;  
-}
 
 /******* END styles for curriculo.html *******/
 
@@ -388,3 +374,25 @@ nav .naoselecionado{
   background-color: rgb(73, 73, 255);
 }
 
+
+.container-pessoal {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-pessoal>div>p {
+  margin-left: 20px;
+  text-align: left;
+  font-size: larger;
+}
+
+.container-pessoal>div>img {
+  margin-top: 15px;
+}
+
+.img-quotes > img {
+  width: 100%;
+  height: auto;
+  padding: 0px 10px;
+  border-radius: 6px;
+}

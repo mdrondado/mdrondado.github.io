@@ -3,31 +3,40 @@
 
 <head profile="http://www.w3.org/2005/10/profile">
    <link rel="icon" type="image/png" href="images\favicon.gif">
-
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Temas relevantes para pessoas que querem aprender inglês">
-      <title>Rondado : : WebSite</title>
-      <link href="css/styles.css" rel="stylesheet">
-   </head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Temas relevantes para pessoas que querem aprender inglês">
+   <title>
+      Rondado : : WebSite
+   </title>
+   <link href="css/styles.css" rel="stylesheet">
+</head>
 
 <body>
    <div class="App">
-      <header class="cabecalhoPrincipal">
+      <header class="header-main">
          <div class="container-header">
-            <div class="cabecalhoPrincipal-titulo">
+            <div class="header-main-title">
                <a href="index.html">
-                  <h3>Rondado</h3>
-               </a>
-               <a href="index.html">
-                  <h3>Maikom's website</h3>
+                  <h3>
+                     Rondado
+                  </h3>
+                  <h3>
+                     Maikom's website
+                  </h3>
                </a>
             </div>
 
-            <nav class="cabecalhoPrincipal-nav">
-               <a class="naoselecionado" href="index.html">Home</a>
-               <a class="naoselecionado" href="curriculo.html">Currículo</a>
+            <nav class="header-main-nav">
+               <a class="not-selected" href="index.html">
+                  Home
+               </a>
+               <a class="not-selected" id="curriculum" href="curriculo.html">
+                  Currículo
+               </a> 
+               <!-- <a class="not-selected" id="personal" href="pessoal.html">
+                  Pessoal
+               </a> -->
             </nav>
          </div>
       </header>
@@ -35,7 +44,9 @@
       <div class="principal">
          <div class="container-sessao margin-bottom">
             <div class="caixaCentro margin-bottom">
-               <h1>English Learning Subjects</h1>
+               <h1>
+                  English Learning Subjects
+               </h1>
                <hr style="width: 100px; margin-bottom: 30px;">
                <p>
                   If you want to deal well with English language you should take this in consideration.
@@ -49,18 +60,23 @@
             </div>
             <div class="caixaCentro margin-bottom">
                <iframe src="https://novoinglesquadro.netlify.app/" width="706" height="910" frameborder="0" border="0"
-                  cellspacing="0"></iframe>
+                  cellspacing="0">
+               </iframe>
             </div>
          </div>
-
       </div>
 
       <footer class="footer-main">
          <div class="container-footer">
-            <div class="container-nome">
-               <h5>Desenvolvido por Maikom</h5>
-            </div>
-         </div>
+            <h5 class="container-nome">
+               Desenvolvido com &nbsp
+               <img src="images\logo-vscode.gif" height="17px" width="17px"
+                  alt="imagem com logotipo vscode">&nbsp e &nbsp
+               <b style="font-size:15px">
+                  &#128536 
+               </b> 
+               &nbsp por Maikom
+            </h5>
       </footer>
    </div>
 </body>
