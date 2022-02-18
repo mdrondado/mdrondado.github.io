@@ -4,61 +4,70 @@
 <head profile="http://www.w3.org/2005/10/profile">
    <link rel="icon" type="image/png" href="images\favicon.gif">
 
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description"
-         content="Currículo de Maikom Rondado profissional de logística e tecnologia da informação">
-      <title>Rondado : : WebSite</title>
-      <link href="css/styles.css" rel="stylesheet">
-      <link href="css/responsive.css" rel="stylesheet">
-      <script src="js/index.js"></script>
-   </head>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description"
+      content="Currículo de Maikom Rondado profissional de logística e tecnologia da informação">
+   <title>
+      Rondado : : WebSite
+   </title>
+   <link href="css/styles.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+   <script src="js/index.js">
+   </script>
+</head>
 
 <body>
    <div class="App">
-      <header class="cabecalhoPrincipal">
+      <header>
          <div class="container-header">
-            <div class="cabecalhoPrincipal-titulo">
+            <div class="header-main-title">
                <a href="index.html">
-                  <h3>Rondado</h3>
-               </a>
-               <a href="index.html">
-                  <h3>Maikom's website</h3>
+                  <h3>
+                     Rondado
+                  </h3>
+                  <h3>
+                     Maikom's website
+                  </h3>
                </a>
             </div>
 
-            <nav class="cabecalhoPrincipal-nav">
-               <a class="naoselecionado" href="index.html">Home</a>
-               <a class="selecionado" id="curriculo" href="curriculo.html">
-                  Currículo
+            <nav class="header-main-nav">
+               <a class="not-selected" href="index.html">
+                  Home
                </a>
+               <a class="selected" id="curriculum" href="curriculo.html">
+                  Currículo
+               </a> 
+               <!-- <a class="not-selected" id="personal" href="pessoal.html">
+                  Pessoal
+               </a> -->
             </nav>
          </div>
       </header>
 
-      <div class="principal margin-bottom">
-         <div class="container-sessao margin-bottom">
+      <div class="principal">
+         <div class="container-sessao">
             <div class="caixaCentro margin-top">
-               <img src=images\foto.png alt="Foto" width="150px" height="150px"
+               <img id="photo-curriculum" src=images\photo-tie.gif alt="Foto" width="130px" height="130px"
                   alt="imagem de foto do autor da página e do conteúdo" />
-               <p></p>
-               <p></p>
-               <h2>Maikom R O Rondado</h2>
-               <p></p>
-               <h3 id="tituloprofissi">Profissional de Logística e Tecnologia da Informação</h3>
-               <p></p>
-               <p>
-                  Profissional da área de logística com foco em tecnologia da informação atuando em diferentes áreas da
-                  cadeia
-                  de suprimentos.
+               <h2>
+                  Maikom R O Rondado
+               </h2>
+               <h3 id="tituloprofissi">
+                  Logística (transporte, armazenagem e distribuição)
+                  <br>Tecnologia (dados e metodologias)
+               </h3>
+               <p>  
+                  Profissional da área de logística com foco em tecnologia da informação (dados) atuando em diferentes áreas da
+                  cadeia de suprimentos.
                   <br> Interesse em gestão de pedidos, fluxos de processos, bancos de dados, linguagens de programação e
                   visualização de informações.
                </p>
                <p>
                   Usuário avançado do Ms Office para controle de processos, elaboração de relatórios, dashboards e
-                  análises de
-                  dados.
+                  análises de dados.
                   <br> Recentemente praticando visualização e modelagem de dados e desenvolvimento de
                   ferramentas Web.
                </p>
@@ -70,10 +79,11 @@
             </div>
          </div>
 
-         <div class="container-sessao margin-bottom">
-            <h1>Palavras-chave</h1>
-            <br>
-            <div class="margin-bottom" style="font-size:larger">
+         <div class="container-sessao">
+            <h1>
+               Palavras-chave
+            </h1>
+            <div class="key-words">
                <div>
                   <p>
                      SCM &nbsp|&nbsp LSS &nbsp|&nbsp Frameworks &nbsp|&nbsp ERP-MRP &nbsp|&nbsp TMS-WMS
@@ -81,23 +91,29 @@
                </div>
                <div>
                   <p>
-                     RDBMS &nbsp|&nbsp ETL &nbsp|&nbsp SQL e NoSQL &nbsp|&nbsp VBA &nbsp|&nbsp Data Vizualization
+                     RDBMS &nbsp|&nbsp ETL &nbsp|&nbsp SQL e NoSQL &nbsp|&nbsp Data Vizualization
                   </p>
                </div>
                <div>
-                  Front End &nbsp|&nbsp HTML &nbsp|&nbsp CSS &nbsp|&nbsp JavaScript &nbsp|&nbsp SVG
+                  Front End &nbsp|&nbsp HTML &nbsp|&nbsp CSS &nbsp|&nbsp JS &nbsp|&nbsp SVG
                   <br>
                </div>
             </div>
+         </div>
 
-            <h1>Formação</h1>
+         <div class="container-sessao">
+            <h1>
+               Formação
+            </h1>
             <br>
-            <div class="texts-box">
+            <div class="lined-elements">
                <div>
                   <img src=images\logo-fatec.png alt="Foto" width="160px" height="80px"
                      alt="imagem com logotipo da Faculdade de Tecnologia Fatec" />
                   <p>
-                     <h3>Centro Paula Sousa FATEC</h3>
+                     <h3>
+                        Centro Paula Sousa FATEC
+                     </h3>
                   </p>
                   <p id="area">
                      Logística e Transportes
@@ -111,7 +127,9 @@
                   <img src=images\logo-senac.png alt="Foto" width="130px" height="80px"
                      alt="imagem com logotipo da Faculdade Senac" />
                   <p>
-                     <h3>Centro Universitário SENAC</h3>
+                     <h3>
+                        Centro Universitário SENAC
+                     </h3>
                   </p>
                   <p id="area">
                      Gestão e Tecnologia
@@ -126,7 +144,9 @@
                   <img src=images\logo-CNA.png alt="Foto" width="130px" height="80px"
                      alt="imagem com logotipo da escola de inglês CNA" />
                   <p>
-                     <h3>Centro Cultural Norte Americano</h3>
+                     <h3>
+                        Centro Cultural Norte Americano
+                     </h3>
                   </p>
                   <p id="area">
                      Inglês e Espanhol
@@ -138,38 +158,39 @@
                   </p>
                </div>
             </div>
-            <p></p>
-            <p id="experiencia"></p>
-            <h1>Experiência</h1>
-            <br></br>
+         </div>
+         
+            <h1>
+               Experiência
+            </h1>
             <div class="logotipos-empresas">
                <div>
-                  <img src=images\logo-ups.png alt="Foto" width="70px" height="80px"
+                  <img src="images\logo-ups.png" alt="Foto" width="70px" height="80px"
                      alt="imagem com logotipo da empresa UPS" />
-                  <img src=images\logo-nsn.png alt="Foto" width="180px" height="100px"
+                  <img src="images\logo-nsn.png" alt="Foto" width="180px" height="100px"
                      alt="imagem com logotipo da empresa Nokia Siemens" />
-                  <img src=images\logo-capgemini.png alt="Foto" width="200px" height="100px"
+                  <img src="images\logo-capgemini.png" alt="Foto" width="200px" height="100px"
                      alt="imagem com logotipo da empresa Capgemini" />
                </div>
                <div>
-                  <img src=images\logo-nextel.jpg alt="Foto" width="140px" height="70px"
+                  <img src="images\logo-nextel.jpg" alt="Foto" width="140px" height="70px"
                      alt="imagem com logotipo da empresa Nextel" />
-                  <img src=images\logo-nec.png alt="Foto" width="100px" height="50px"
+                  <img src="images\logo-nec.png" alt="Foto" width="100px" height="50px"
                      alt="imagem com logotipo da empresa NEC" />
-                  <img src=images\logo-kof.png alt="Foto" width="120px" height="110px"
+                  <img src="images\logo-kof.png" alt="Foto" width="120px" height="110px"
                      alt="imagem com logotipo da empresa Femsa Coca-Cola" />
                </div>
+            
+               <div>
+                  Logotipos representam empresas ao longo de 20 anos de experiência.
+               </div>
             </div>
-
-            <div>
-               Logotipos representam empresas ao longo de 20 anos de experiência.
-            </div>
-
-            <div class="texts-box">
-
+            <div class="lined-elements">
                <div>
                   <p id="cargo">
-                     <b>Especialista em Logística</b>
+                     <b>
+                        Especialista em Logística
+                     </b>
                   </p>
                   <p>
                      Fui responsável por acompanhar as etapas fiscais de entrada, saída e transportes até o local da
@@ -184,7 +205,9 @@
                </div>
                <div>
                   <p id="cargo">
-                     <b>Coordenador de Logística</b>
+                     <b>
+                        Coordenador de Logística
+                     </b>
                   </p>
                   <p>
                      Trabalhei diretamente com o SAP garantindo também a qualidade das informações de pedidos colocados
@@ -198,7 +221,9 @@
                </div>
                <div>
                   <p id="cargo">
-                     <b>Analista de Logística</b>
+                     <b>
+                        Analista de Logística
+                     </b>
                   </p>
                   <p>
                      ​Primeira experiência profissional onde absolvi bastante informação das áreas de logística e
@@ -212,54 +237,47 @@
                </div>
             </div>
          </div>
+
          <!-- can be implemented as a component -->
-         <div class="container-contatos margin-bottom">
-            <div id="contatos">
-               <a href="https://wa.me/5511963216857">
-                  <img src="images\logo-whatsapp.png" height="50px" width="50px"
-                     alt="imagem link para acesso ao whatsapp do autor">
-                  <br>
-                  <b>Whatsapp</b>
-               </a>
-            </div>
-            <div>
-               <a href="https://www.linkedin.com/in/maikomrondado/">
-                  <img src="images\logo-linkedin.png" height="50px" width="50px"
-                     alt="imagem link para acesso ao linkedin do autor">
-                  <br>
-                  <b>Linkedin</b>
-               </a>
-            </div>
-            <div>
-               <a href="https://www.facebook.com/maikom.rondado">
-                  <img src="images\logo-facebook.png" height="50px" width="50px"
-                     alt="imagem link para acesso ao facebook do autor">
-                  <br>
-                  <b>Facebook</b>
-               </a>
-            </div>
-            <div>
-               <a href="https://www.instagram.com/rondado.maikom/">
-                  <img src="images\logo-instagram.png" height="50px" width="50px"
-                     alt="imagem link para acesso ao instagram do autor">
-                  <br>
-                  <b>Instagram</b>
-               </a>
-            </div>
+         <div class="container-contatos">
+            <a id="contacts" href="https://wa.me/5511963216857">         
+               <img src="images\logo-whatsapp.png" height="50px" width="50px" 
+                  alt="imagem link para acesso ao whatsapp do autor">
+               <br>
+                  Whatsapp
+            </a>
+            <a href="https://www.linkedin.com/in/maikomrondado/">         
+               <img src="images\logo-linkedin.png" height="50px" width="50px" 
+                  alt="imagem link para acesso ao linkedin do autor">
+               <br>
+                  Linkedin
+            </a>
+            <a href="https://www.facebook.com/maikom.rondado">          
+               <img src="images\logo-facebook.png" height="50px" width="50px" 
+                  alt="imagem link para acesso ao facebook do autor">
+               <br>
+                  Facebook
+            </a>
+            <a href="https://www.instagram.com/rondado.maikom/">           
+               <img src="images\logo-instagram.png" height="50px" width="50px" 
+                  alt="imagem link para acesso ao instagram do autor">
+               <br>
+                  Instagram
+            </a>
          </div>
          <!-- can be implemented as a component -->
-
-
-
-
-      </div>
 
       <footer class="footer-main">
          <div class="container-footer">
-            <div class="container-nome">
-               <h5>Desenvolvido por Maikom</h5>
-            </div>
-         </div>
+            <h5 class="container-nome">
+               Desenvolvido com &nbsp
+               <img src="images\logo-vscode.gif" height="17px" width="17px"
+                  alt="imagem com logotipo vscode">&nbsp e &nbsp
+               <b style="font-size:15px">
+                  &#128536 
+               </b> 
+               &nbsp por Maikom
+            </h5>
       </footer>
    </div>
 </body>
