@@ -47,6 +47,8 @@ li {
 
 img {
   border-radius: 6px;
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
@@ -55,36 +57,31 @@ footer {
 
 .App header{
   display: flex;
-  align-items:center;
+  align-items: center;
   background-color: black;
-  height: 200px;
+  height: 350px;
 } 
 
 header .container-header {
   display: flex;
-  flex-direction: column;
-  margin: auto;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   max-width: 1050px;
-  height: 140px;
+  margin: 10px;
 }
 
-.header-main-title > a > h3 {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.726);
-  margin: auto;
-}
-
-.header-main-title > a {
-  text-decoration: none;
-  color: white;
+.container-header .header-main-title {
+  display:flex;
+  flex-direction: column;
+  height: 300px;
+  margin:10px auto;
+  justify-content: space-between;
 }
 
 .header-main-nav {
   display: flex;
-  justify-content:space-around;
+  justify-content:center;
   align-items: center;
 }
 
@@ -233,7 +230,6 @@ section {
   margin: 20px 0px;
   background-color: rgb(219, 245, 255);
   padding: 30px 60px;
-  height: 250px;
 }
 
 .link-contacts a {
@@ -396,3 +392,21 @@ section {
   padding: 0px 10px;
   border-radius: 6px;
 }
+
+
+
+
+.app-smart {
+  display: flex;
+  justify-content: center;
+}
+
+.princi-smart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 1920px;
+  width: 1240px;
+  background-color: darkmagenta;
+}
+
