@@ -133,6 +133,7 @@ nav .not-selected{
 .container-footer .container-nome{
   display:flex;
   justify-content: center;
+  align-items: center;
 }
 
 .margin-bottom {
@@ -250,7 +251,7 @@ section {
   flex-direction: row;
   align-self: center;
   justify-content: space-around;
-  width: 400px;
+  width: 250px;
   margin-top: 130px;
 }
 
