@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="robots" content="noindex, nofollow">
+   <meta name="description" content="Acesso restrito às páginas pessoais do autor">
+   <link rel="icon" type="image/gif" href="images/favicon.gif">
+   <title>
+      Rondado : : Acesso
+   </title>
+   <link href="css/styles.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+   <div class="App">
+      <header class="container-header">
+         <div class="header-main-title">
+            <div>
+               <img src="images/logotipo_novo.jpg" height="230" width="530"
+               alt="Logotipo do site de Maikom Rondado">
+            </div>
+            <nav class="header-main-nav" aria-label="Navegação principal">
+               <a class="not-selected" href="index.html">Home</a>
+               <a class="not-selected" id="curriculum" href="curriculo.html">Currículo</a>
+            </nav>
+         </div>
+      </header>
+
+      <div class="principal">
+         <div class="container-sessao margin-bottom">
+            <h1>Acesso restrito</h1>
+            <p>As páginas pessoais deste site só ficam disponíveis para quem o autor aprovar.</p>
+
+            <div class="container-sessao">
+               <h3>Já tenho acesso</h3>
+               <p>Clique abaixo e informe o usuário e a senha que o autor enviou para você.<br>O navegador pode oferecer para salvar, assim você não precisa digitar de novo nas próximas visitas.</p>
+               <a id="botao-acesso" href="https://privado.mdrondado.workers.dev/" target="_blank" rel="noopener noreferrer">
+                  Entrar nas páginas pessoais
+               </a>
+            </div>
+
+            <div class="container-sessao margin-bottom">
+               <h3>Ainda não tenho acesso</h3>
+               <p>Preencha o formulário abaixo explicando o motivo.<br>Se aprovado, o autor vai te enviar o usuário e a senha por e-mail ou WhatsApp.</p>
+               <form action="https://formsubmit.co/mdrondado@hotmail.com" method="POST">
+                  <input type="hidden" name="_subject" value="Pedido de acesso - Rondado WebSite">
+                  <input type="hidden" name="_template" value="table">
+                  <input type="hidden" name="_captcha" value="true">
+                  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+                  <label for="req-name">Nome:</label>
+                  <input id="req-name" type="text" name="Nome" required>
+                  <p></p>
+
+                  <label for="req-email">E-mail:</label>
+                  <input id="req-email" type="email" name="Email" required>
+                  <p></p>
+
+                  <label for="req-message">Motivo:</label>
+                  <textarea id="req-message" name="Motivo" rows="4" cols="30" required></textarea>
+                  <p></p>
+
+                  <button type="submit">Solicitar acesso</button>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <footer class="footer-main">
+         <div class="container-footer">
+            <h5 class="container-nome">Desenvolvido pelo autor. &nbsp<b style="font-size:15px">&#128142;</b>&nbsp Agradeço sua visita!</h5>
+         </div>
+      </footer>
+   </div>
+</body>
+
+</html>
