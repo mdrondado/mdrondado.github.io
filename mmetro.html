@@ -1,39 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head profile="http://www.w3.org/2005/10/profile">
-   <link rel="icon" type="image/png" href="images\favicon.gif">
-
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description"
-         content="Mini Metro é um um jogo de puzzle (quebra-cabeças) onde objetivo é gerenciar transporte de símbolos na rede">
-      <title>
-         Rondado : : WebSite
-      </title>
-      <link href="css/styles.css" rel="stylesheet">
-      <link href="css/responsive.css" rel="stylesheet">
-   </head>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Mini Metro é um um jogo de puzzle (quebra-cabeças) onde objetivo é gerenciar transporte de símbolos na rede">
+   <link rel="icon" type="image/gif" href="images/favicon.gif">
+   <title>Rondado : : WebSite</title>
+   <link href="css/styles.css" rel="stylesheet">
+   <link href="css/responsive.css" rel="stylesheet">
+   <script src="js/index.js" defer></script>
+</head>
 
 <body>
    <div class="App">
       <header class="container-header">
          <div class="header-main-title">
             <div>
-               <img src="images\logotipo_novo.jpg" height="230px" width="530px" 
-               alt="imagem link para acesso a um currículo feito com animação">
+               <img src="images/logotipo_novo.jpg" height="230" width="530" alt="imagem link para acesso a um currículo feito com animação">
             </div>
-            <nav class="header-main-nav">
-               <a class="not-selected" href="index.html">
-                  Home
-               </a>
-               <a class="not-selected" id="curriculum" href="curriculo.html">
-                  Currículo
-               </a> 
-               <!-- <a class="not-selected" id="personal" href="pessoal.html">
-                  Pessoal
-               </a> -->
+            <nav class="header-main-nav" aria-label="Navegação principal">
+               <a class="not-selected" href="index.html">Home</a>
+               <a class="not-selected" id="curriculum" href="curriculo.html">Currículo</a>
+               <!-- <a class="not-selected" id="personal" href="pessoal.html">Pessoal</a> -->
             </nav>
          </div>
       </header>
@@ -41,111 +29,62 @@
       <div class="principal">
          <div class="container-sessao margin-bottom">
             <div class="caixaCentro">
-               <h1>
-                  Mini Metro
-               </h1>
+               <h1>Mini Metro</h1>
                <hr style="width: 100px; margin-bottom: 30px;">
                <br>
                <div>
-                  <img class="mm-image" src=images\metroLargo.jpg alt="Foto" width=100% height=100% />
+                  <img class="mm-image" src="images/metroLargo.jpg" width="100%" height="100%" alt="Imagem do jogo Mini Metro" />
                </div>
             </div>
             <div class="texts-image">
-               <p>
-                  Um quebra-cabeças básico de transportes que ao mesmo tempo se torna complexo.
-               </p>
+               <p>Um quebra-cabeças básico de transportes que ao mesmo tempo se torna complexo.</p>
             </div>
 
             <div class="texts-box">
-               <p>
-                  Mini metro é um jogo simples de estratégia ou puzzle (quebra-cabeças) que desafia a construir uma rede
-                  eficiente de transportes.
-                  Longe de ser um simulador de metrô, o estilo e gráficos do jogo são bem minimalistas.
-                  Porém, não se iluda com a jogabilidade, pois torna-se um verdadeiro dilema gerenciar a rede a medida
-                  que a demanda vai aumentando com o tempo.
-               </p>
-               <p>
-                  A composição do jogo se dá através de símbolos, que podemos chamar de "estações", "passageiros" e
-                  "vagões" para que fique mais claro o entendimento.
-                  O objetivo é não deixar acumular muitos passageiros nas estações pois quando isto ocorre começa uma
-                  contagem regressiva de tempo que leva ao fim do jogo.
-               </p>
+               <p>Mini Metro é um jogo simples de estratégia ou puzzle (quebra-cabeças) que desafia a construir uma rede eficiente de transportes. Longe de ser um simulador de metrô, o estilo e gráficos do jogo são bem minimalistas. Porém, não se iluda com a jogabilidade, pois torna-se um verdadeiro dilema gerenciar a rede à medida que a demanda vai aumentando com o tempo.</p>
+               <p>A composição do jogo se dá através de símbolos, que podemos chamar de "estações", "passageiros" e "vagões" para que fique mais claro o entendimento. O objetivo é não deixar acumular muitos passageiros nas estações pois quando isto ocorre começa uma contagem regressiva de tempo que leva ao fim do jogo.</p>
             </div>
 
             <div class="caixaCentro">
                <div>
                   <br>
-                  <img class="mm-image" src=images\minimapa.png alt="Foto" width=100% height=100% />
+                  <img class="mm-image" src="images/minimapa.png" width="100%" height="100%" alt="Elementos principais do jogo Mini Metro" />
                </div>
             </div>
             <div class="texts-image">
-               <p>
-                  Principais elementos do jogo são símbolos simples
-               </p>
+               <p>Principais elementos do jogo são símbolos simples</p>
             </div>
             <div class="texts-box">
-               <p>
-                  As estações podem ser conectadas desenhando-se uma linha entre elas.
-                  Ao conectar duas estações através de uma linha, um vagão também é criado e irá iniciar o transporte
-                  entre estas estações.
-                  Os passageiros surgem ao longo do tempo nas estações e se não forem transportados vão se acumulando.
-                  O passageiro de determinado símbolo sempre vai ter como destino uma estação deste mesmo símbolo.
-                  Exemplo: símbolo "triângulo" aparece numa estação "círculo", logo o objetivo será transportar esse
-                  "passageiro" até uma estação triângulo.
-               </p>
-               <p>
-                  Um detalhe que chama a atenção é que podemos paralizar o jogo, estudar melhor a rede e até mesmo
-                  reconstruí-la novamente do inicio.
-                  Isso não afeta a pontuação em si, que é calculada em número de semanas "sobrevividas" e de passageiros
-                  transportados.
-               </p>
-               <p>
-                  Se os passageiros não forem transportados para estações adjacentes e acumularem em determinada
-                  estação, inicia-se uma contagem de tempo.
-                  O jogador perde caso essa contagem chegue ao fim.
-                  Bem simples, não é verdade!? rs
-               </p>
+               <p>As estações podem ser conectadas desenhando-se uma linha entre elas. Ao conectar duas estações através de uma linha, um vagão também é criado e irá iniciar o transporte entre estas estações. Os passageiros surgem ao longo do tempo nas estações e se não forem transportados vão se acumulando. O passageiro de determinado símbolo sempre vai ter como destino uma estação deste mesmo símbolo. Exemplo: símbolo "triângulo" aparece numa estação "círculo", logo o objetivo será transportar esse "passageiro" até uma estação triângulo.</p>
+               <p>Um detalhe que chama a atenção é que podemos paralisar o jogo, estudar melhor a rede e até mesmo reconstruí-la novamente do início. Isso não afeta a pontuação em si, que é calculada em número de semanas "sobrevividas" e de passageiros transportados.</p>
+               <p>Se os passageiros não forem transportados para estações adjacentes e acumularem em determinada estação, inicia-se uma contagem de tempo. O jogador perde caso essa contagem chegue ao fim. Bem simples, não é verdade!? rs</p>
             </div>
 
             <div class="caixaCentro">
                <br>
                <div>
-                  <img class="mm-image" src=images\mmetro2.gif alt="Foto" width=100% height=100% />
+                  <img class="mm-image" src="images/mmetro2.gif" width="100%" height="100%" alt="Animação do jogo Mini Metro" />
                </div>
             </div>
             <div class="texts-image">
-               <p>
-                  Animação divulgando o game
-               </p>
+               <p>Animação divulgando o game</p>
+            </div>
+            <div class="texts-box margin-bottom">
+               <p style="text-align: justify;">Este jogo "indie" (criado por desenvolvedores independentes) recebeu vários prêmios e possui uma excelente avaliação estando a venda nas principais plataformas de comercialização de jogos e aplicativos.</p>
+               <p style="text-align: justify;">Uma pequena amostra pode ser verificada numa <a href="https://www.coolmathgames.com/0-mini-metro-london" target="_blank" rel="noopener noreferrer">versão gratuita</a>.</p>
             </div>
 
             <div class="texts-box margin-bottom">
-               <p style="text-align: justify;">
-                  Este jogo "indie" (criado por desenvolvedores independentes) recebeu vários prêmios e possui uma
-                  excelente avaliação estando a venda nas principais plataformas de comercialização de jogos e
-                  aplicativos.
-               </p>
-               <p style="text-align: justify;">
-                  Uma pequena amostra pode ser verificada numa
-                  <a href="https://www.coolmathgames.com/0-mini-metro-london" target="_blank">
-                     versão gratuíta
-                  </a>.
-               </p>
+               <p style="text-align: justify;">Depois de anos atuando na operação de logística, o que mais me chama atenção no Mini Metro é como ele reproduz, com símbolos simples, a sensação real de administrar uma rede sob demanda crescente: cada nova linha é uma decisão de capacidade, e deixar os passageiros se acumularem numa estação lembra bastante um pedido travado no armazém à espera de transporte. Por outro lado, o jogo simplifica de propósito tudo o que realmente dá trabalho numa operação: não há <i>lead time</i> de fornecedor, variação imprevisível de demanda, nem a parte fiscal e burocrática que toma boa parte do dia a dia real. Funciona como uma ótima introdução à intuição de rede e capacidade, mas fica longe da complexidade operacional do mundo real.</p>
             </div>
          </div>
       </div>
 
       <footer class="footer-main">
          <div class="container-footer">
-            <h5 class="container-nome">
-               Desenvolvido pelo autor. &nbsp
-               <b style="font-size:15px">
-                  &#128142 
-               </b> 
-               &nbsp Agradeço sua visita! &nbsp               
-            </h5>
+            <h5 class="container-nome">Desenvolvido pelo autor. &nbsp<b style="font-size:15px">&#128142;</b>&nbsp Agradeço sua visita!</h5>
+         </div>
       </footer>
    </div>
-
 </body>
 </html>
