@@ -1,7 +1,3 @@
-/* * {
-  font-size: 16px;
-} */
-
 /******* START styles applyied in all pages *******/
 
 * {
@@ -10,9 +6,9 @@
 
 :root {
   --vermelho: #E50914;
-  --preto: #141414;
   --accent: #2f6fed;
   --accent-dark: #15294f;
+  --accent-visited: #6b4ea8;
 }
 
 body {
@@ -34,7 +30,7 @@ a {
 }
 
 a:visited {
-  color: #141414;
+  color: var(--accent-visited);
 }
 
 html {
@@ -55,6 +51,10 @@ img {
   border-radius: 6px;
   max-width: 100%;
   height: auto;
+}
+
+iframe {
+  max-width: 100%;
 }
 
 footer {
@@ -103,20 +103,23 @@ footer {
   animation: heroTextIn .7s ease .3s both;
 }
 
-header .container-header {
+/* a faixa preta ocupa a largura toda; quem e limitado e o conteudo dentro dela */
+.container-header {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 1050px;
-  margin: 10px;
 }
 
 .container-header .header-main-title {
-  display:flex;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   height: 300px;
-  margin:10px auto;
+  width: 100%;
+  max-width: 1050px;
+  min-width: 0;
+  margin: 10px auto;
   justify-content: space-between;
 }
 
@@ -133,7 +136,7 @@ header .container-header {
   margin-left: 10px;
 }
 
-.header-main-nav > a :hover {
+.header-main-nav > a:hover {
   text-decoration: underline;
 }
 
@@ -176,12 +179,6 @@ nav .not-selected{
   justify-content: center;
   align-items: center;
   font-size: 14px;
-}
-
-.emoji {
-  font-size: 15px;
-  display: inline-block;
-  margin: 0 5px;
 }
 
 .margin-bottom {
@@ -262,7 +259,8 @@ section {
    padding: 0px 10px;
 }
 
-.link-blog > img {
+.link-blog > img,
+.post-card > img {
   width: 310px;
   height: 180px;
   object-fit: cover;
@@ -282,6 +280,12 @@ section {
 .post-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 28px rgba(21, 41, 79, 0.18);
+}
+
+/* card sem link nao deve se comportar como clicavel */
+.post-card-em-construcao:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 .link-contacts {
@@ -349,6 +353,84 @@ section {
   text-decoration: underline;
 }
 
+/* Miniaturas de video: o player do YouTube so e criado no clique (js/index.js) */
+.video-facade {
+  display: block;
+  width: 310px;
+  padding: 0;
+  margin: 0 auto;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.video-thumb {
+  position: relative;
+  display: block;
+}
+
+.video-thumb > img {
+  display: block;
+  width: 310px;
+  height: 180px;
+  object-fit: cover;
+  transition: .3s ease opacity;
+}
+
+.video-play {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 62px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: rgba(20, 20, 20, .75);
+  transition: .3s ease background-color;
+}
+
+/* triangulo branco do play */
+.video-play::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 9px 15px;
+  border-color: transparent transparent transparent white;
+  transform: translateX(2px);
+}
+
+.video-facade:hover .video-thumb > img,
+.video-facade:focus-visible .video-thumb > img {
+  opacity: 70%;
+}
+
+.video-facade:hover .video-play,
+.video-facade:focus-visible .video-play {
+  background-color: var(--vermelho);
+}
+
+.video-facade:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.video-card > .video-caption {
+  margin: 8px 0 0;
+  padding: 0 10px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 60%);
+}
+
+.video-card > .video-caption > b {
+  display: block;
+  color: rgba(0, 0, 0, 80%);
+}
+
 /******* END styles for index.html *******/
 
 /******* START styles for curriculo.html *******/
@@ -411,29 +493,14 @@ section {
 
 /******* START styles for cinfo.html *******/
 
-.curriculo-anima{
-  height: auto;
-}
-
 .caixaCurriculo {
   width: 100%;
   align-items: center;
 }
 
-#curriculoanima {
-  margin-bottom: 150px;
-}
-
-
 /******* END styles for cinfo.html *******/
 
 /******* START styles for mmetro.html *******/
-
-.caixaTexto {
-  width: 100%;
-  max-width: 1000px;
-  text-align: justify;
-}
 
 .mm-image {
   max-width: 450px;
@@ -457,44 +524,3 @@ section {
 #botao-acesso:hover {
   background-color: rgb(73, 73, 255);
 }
-
-
-.container-pessoal {
-  display: flex;
-  flex-direction: row;
-}
-
-.container-pessoal>div>p {
-  margin-left: 20px;
-  text-align: left;
-  font-size: larger;
-}
-
-.container-pessoal>div>img {
-  margin-top: 15px;
-}
-
-.img-quotes > img {
-  width: 100%;
-  height: auto;
-  padding: 0px 10px;
-  border-radius: 6px;
-}
-
-
-
-
-.app-smart {
-  display: flex;
-  justify-content: center;
-}
-
-.princi-smart {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 1920px;
-  width: 1240px;
-  background-color: darkmagenta;
-}
-
