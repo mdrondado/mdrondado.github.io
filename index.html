@@ -161,105 +161,111 @@
          <section>
             <p>Sobre temas de logística, cadeia de suprimentos, dados e inteligência artificial.<br>O critério de seleção foi a simplicidade da explicação, e esse tipo de clareza costuma aparecer mais em vídeos em inglês.
                <br>IMPORTANTE: o vídeo só é carregado quando você clica no play. Para assistir em resolução maior, clique depois no símbolo do YouTube.</p>
-            <div class="video-abas" role="tablist" aria-label="Temas dos vídeos">
-               <button type="button" role="tab" id="aba-logistica" aria-controls="videos-logistica" aria-selected="true">Logística</button>
-               <button type="button" role="tab" id="aba-dados" aria-controls="videos-dados" aria-selected="false" tabindex="-1">Dados</button>
-               <button type="button" role="tab" id="aba-ia" aria-controls="videos-ia" aria-selected="false" tabindex="-1">Inteligência Artificial</button>
+            <div class="video-filtros">
+               <div class="video-temas" role="group" aria-label="Filtrar vídeos por tema">
+                  <button type="button" data-tema="todos" aria-pressed="true">Todos</button>
+                  <button type="button" data-tema="logistica" aria-pressed="false">Logística</button>
+                  <button type="button" data-tema="dados" aria-pressed="false">Dados</button>
+                  <button type="button" data-tema="ia" aria-pressed="false">Inteligência Artificial</button>
+               </div>
+               <label class="video-busca">
+                  <span class="visualmente-oculto">Buscar vídeo pelo título ou canal</span>
+                  <input type="search" id="busca-videos" placeholder="Buscar pelo título ou canal" autocomplete="off">
+               </label>
+               <p class="video-contagem" id="contagem-videos" aria-live="polite">27 vídeos</p>
             </div>
-            <div class="lined-elements" id="videos-logistica" role="tabpanel" aria-labelledby="aba-logistica" tabindex="0">
-                  <div class="video-card">
-                     <button class="video-facade" type="button" data-video-id="4EDYfSl-fmc"
-                        data-video-title="Six Sigma In 9 Minutes - Simplilearn" aria-label="Reproduzir o vídeo Six Sigma In 9 Minutes, do canal Simplilearn">
-                        <span class="video-thumb">
-                           <img src="https://i.ytimg.com/vi/4EDYfSl-fmc/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
-                           <span class="video-play" aria-hidden="true"></span>
-                        </span>
-                     </button>
-                     <p class="video-caption"><b>Six Sigma In 9 Minutes</b>Simplilearn</p>
-                  </div>
-                  <div class="video-card">
-                     <button class="video-facade" type="button" data-video-id="RkPBiAUGo-M"
-                        data-video-title="Fishbone Diagram (Ishikawa): Explained with examples - LEARN &amp; APPLY : Lean and Six Sigma" aria-label="Reproduzir o vídeo Fishbone Diagram (Ishikawa): Explained with examples, do canal LEARN &amp; APPLY : Lean and Six Sigma">
-                        <span class="video-thumb">
-                           <img src="https://i.ytimg.com/vi/RkPBiAUGo-M/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
-                           <span class="video-play" aria-hidden="true"></span>
-                        </span>
-                     </button>
-                     <p class="video-caption"><b>Fishbone Diagram (Ishikawa): Explained with examples</b>LEARN &amp; APPLY : Lean and Six Sigma</p>
-                  </div>
-                  <div class="video-card">
-                     <button class="video-facade" type="button" data-video-id="4Vf4x0RQd74"
-                        data-video-title="Scrum vs Kanban: Difference Between Scrum And Kanban - Simplilearn" aria-label="Reproduzir o vídeo Scrum vs Kanban: Difference Between Scrum And Kanban, do canal Simplilearn">
-                        <span class="video-thumb">
-                           <img src="https://i.ytimg.com/vi/4Vf4x0RQd74/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
-                           <span class="video-play" aria-hidden="true"></span>
-                        </span>
-                     </button>
-                     <p class="video-caption"><b>Scrum vs Kanban: Difference Between Scrum And Kanban</b>Simplilearn</p>
-                  </div>
-                  <div class="video-card">
-                     <button class="video-facade" type="button" data-video-id="VNK2X4Y1fss"
-                        data-video-title="How to Measure Supply Chain Performance - Skillsoft" aria-label="Reproduzir o vídeo How to Measure Supply Chain Performance, do canal Skillsoft">
-                        <span class="video-thumb">
-                           <img src="https://i.ytimg.com/vi/VNK2X4Y1fss/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
-                           <span class="video-play" aria-hidden="true"></span>
-                        </span>
-                     </button>
-                     <p class="video-caption"><b>How to Measure Supply Chain Performance</b>Skillsoft</p>
-                  </div>
-                  <div class="video-card">
-                     <button class="video-facade" type="button" data-video-id="oqR6SV8ma_8"
-                        data-video-title="Value chain explained - International Labour Organization" aria-label="Reproduzir o vídeo Value chain explained, do canal International Labour Organization">
-                        <span class="video-thumb">
-                           <img src="https://i.ytimg.com/vi/oqR6SV8ma_8/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
-                           <span class="video-play" aria-hidden="true"></span>
-                        </span>
-                     </button>
-                     <p class="video-caption"><b>Value chain explained</b>International Labour Organization</p>
-                  </div>
-                  <div class="video-card">
-                     <button class="video-facade" type="button" data-video-id="5o2dN3_5Anc"
-                        data-video-title="5 Key Metrics for Last-mile Logistics - Abivin" aria-label="Reproduzir o vídeo 5 Key Metrics for Last-mile Logistics, do canal Abivin">
-                        <span class="video-thumb">
-                           <img src="https://i.ytimg.com/vi/5o2dN3_5Anc/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
-                           <span class="video-play" aria-hidden="true"></span>
-                        </span>
-                     </button>
-                     <p class="video-caption"><b>5 Key Metrics for Last-mile Logistics</b>Abivin</p>
-                  </div>
-                  <div class="video-card">
-                     <button class="video-facade" type="button" data-video-id="4YqOqECbPH8"
-                        data-video-title="What Is The Bullwhip Effect: Demand Amplification - LeanVlog" aria-label="Reproduzir o vídeo What Is The Bullwhip Effect: Demand Amplification, do canal LeanVlog">
-                        <span class="video-thumb">
-                           <img src="https://i.ytimg.com/vi/4YqOqECbPH8/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
-                           <span class="video-play" aria-hidden="true"></span>
-                        </span>
-                     </button>
-                     <p class="video-caption"><b>What Is The Bullwhip Effect: Demand Amplification</b>LeanVlog</p>
-                  </div>
-                  <div class="video-card">
-                     <button class="video-facade" type="button" data-video-id="qdTAgVZ7RWY"
-                        data-video-title="What is Just-In-Time Inventory? JIT Explained - Racklify" aria-label="Reproduzir o vídeo What is Just-In-Time Inventory? JIT Explained, do canal Racklify">
-                        <span class="video-thumb">
-                           <img src="https://i.ytimg.com/vi/qdTAgVZ7RWY/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
-                           <span class="video-play" aria-hidden="true"></span>
-                        </span>
-                     </button>
-                     <p class="video-caption"><b>What is Just-In-Time Inventory? JIT Explained</b>Racklify</p>
-                  </div>
-                  <div class="video-card">
-                     <button class="video-facade" type="button" data-video-id="EJXW4mdCA_M"
-                        data-video-title="Incoterms Explained: EXW, FOB, CIF, DDP and More - FinDucation" aria-label="Reproduzir o vídeo Incoterms Explained: EXW, FOB, CIF, DDP and More, do canal FinDucation">
-                        <span class="video-thumb">
-                           <img src="https://i.ytimg.com/vi/EJXW4mdCA_M/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
-                           <span class="video-play" aria-hidden="true"></span>
-                        </span>
-                     </button>
-                     <p class="video-caption"><b>Incoterms Explained: EXW, FOB, CIF, DDP and More</b>FinDucation</p>
-                  </div>
-            </div>
-            <div class="lined-elements" id="videos-dados" role="tabpanel" aria-labelledby="aba-dados" tabindex="0" hidden>
-               <div class="video-card">
+            <div class="lined-elements" id="lista-videos">
+               <div class="video-card" data-tema="logistica">
+                  <button class="video-facade" type="button" data-video-id="4EDYfSl-fmc"
+                     data-video-title="Six Sigma In 9 Minutes - Simplilearn" aria-label="Reproduzir o vídeo Six Sigma In 9 Minutes, do canal Simplilearn">
+                     <span class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/4EDYfSl-fmc/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
+                        <span class="video-play" aria-hidden="true"></span>
+                     </span>
+                  </button>
+                  <p class="video-caption"><b>Six Sigma In 9 Minutes</b>Simplilearn<span class="video-tema">Logística</span></p>
+               </div>
+               <div class="video-card" data-tema="logistica">
+                  <button class="video-facade" type="button" data-video-id="RkPBiAUGo-M"
+                     data-video-title="Fishbone Diagram (Ishikawa): Explained with examples - LEARN &amp; APPLY : Lean and Six Sigma" aria-label="Reproduzir o vídeo Fishbone Diagram (Ishikawa): Explained with examples, do canal LEARN &amp; APPLY : Lean and Six Sigma">
+                     <span class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/RkPBiAUGo-M/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
+                        <span class="video-play" aria-hidden="true"></span>
+                     </span>
+                  </button>
+                  <p class="video-caption"><b>Fishbone Diagram (Ishikawa): Explained with examples</b>LEARN &amp; APPLY : Lean and Six Sigma<span class="video-tema">Logística</span></p>
+               </div>
+               <div class="video-card" data-tema="logistica">
+                  <button class="video-facade" type="button" data-video-id="4Vf4x0RQd74"
+                     data-video-title="Scrum vs Kanban: Difference Between Scrum And Kanban - Simplilearn" aria-label="Reproduzir o vídeo Scrum vs Kanban: Difference Between Scrum And Kanban, do canal Simplilearn">
+                     <span class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/4Vf4x0RQd74/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
+                        <span class="video-play" aria-hidden="true"></span>
+                     </span>
+                  </button>
+                  <p class="video-caption"><b>Scrum vs Kanban: Difference Between Scrum And Kanban</b>Simplilearn<span class="video-tema">Logística</span></p>
+               </div>
+               <div class="video-card" data-tema="logistica">
+                  <button class="video-facade" type="button" data-video-id="VNK2X4Y1fss"
+                     data-video-title="How to Measure Supply Chain Performance - Skillsoft" aria-label="Reproduzir o vídeo How to Measure Supply Chain Performance, do canal Skillsoft">
+                     <span class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/VNK2X4Y1fss/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
+                        <span class="video-play" aria-hidden="true"></span>
+                     </span>
+                  </button>
+                  <p class="video-caption"><b>How to Measure Supply Chain Performance</b>Skillsoft<span class="video-tema">Logística</span></p>
+               </div>
+               <div class="video-card" data-tema="logistica">
+                  <button class="video-facade" type="button" data-video-id="oqR6SV8ma_8"
+                     data-video-title="Value chain explained - International Labour Organization" aria-label="Reproduzir o vídeo Value chain explained, do canal International Labour Organization">
+                     <span class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/oqR6SV8ma_8/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
+                        <span class="video-play" aria-hidden="true"></span>
+                     </span>
+                  </button>
+                  <p class="video-caption"><b>Value chain explained</b>International Labour Organization<span class="video-tema">Logística</span></p>
+               </div>
+               <div class="video-card" data-tema="logistica">
+                  <button class="video-facade" type="button" data-video-id="5o2dN3_5Anc"
+                     data-video-title="5 Key Metrics for Last-mile Logistics - Abivin" aria-label="Reproduzir o vídeo 5 Key Metrics for Last-mile Logistics, do canal Abivin">
+                     <span class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/5o2dN3_5Anc/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
+                        <span class="video-play" aria-hidden="true"></span>
+                     </span>
+                  </button>
+                  <p class="video-caption"><b>5 Key Metrics for Last-mile Logistics</b>Abivin<span class="video-tema">Logística</span></p>
+               </div>
+               <div class="video-card" data-tema="logistica">
+                  <button class="video-facade" type="button" data-video-id="4YqOqECbPH8"
+                     data-video-title="What Is The Bullwhip Effect: Demand Amplification - LeanVlog" aria-label="Reproduzir o vídeo What Is The Bullwhip Effect: Demand Amplification, do canal LeanVlog">
+                     <span class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/4YqOqECbPH8/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
+                        <span class="video-play" aria-hidden="true"></span>
+                     </span>
+                  </button>
+                  <p class="video-caption"><b>What Is The Bullwhip Effect: Demand Amplification</b>LeanVlog<span class="video-tema">Logística</span></p>
+               </div>
+               <div class="video-card" data-tema="logistica">
+                  <button class="video-facade" type="button" data-video-id="qdTAgVZ7RWY"
+                     data-video-title="What is Just-In-Time Inventory? JIT Explained - Racklify" aria-label="Reproduzir o vídeo What is Just-In-Time Inventory? JIT Explained, do canal Racklify">
+                     <span class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/qdTAgVZ7RWY/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
+                        <span class="video-play" aria-hidden="true"></span>
+                     </span>
+                  </button>
+                  <p class="video-caption"><b>What is Just-In-Time Inventory? JIT Explained</b>Racklify<span class="video-tema">Logística</span></p>
+               </div>
+               <div class="video-card" data-tema="logistica">
+                  <button class="video-facade" type="button" data-video-id="EJXW4mdCA_M"
+                     data-video-title="Incoterms Explained: EXW, FOB, CIF, DDP and More - FinDucation" aria-label="Reproduzir o vídeo Incoterms Explained: EXW, FOB, CIF, DDP and More, do canal FinDucation">
+                     <span class="video-thumb">
+                        <img src="https://i.ytimg.com/vi/EJXW4mdCA_M/mqdefault.jpg" width="310" height="180" alt="" loading="lazy">
+                        <span class="video-play" aria-hidden="true"></span>
+                     </span>
+                  </button>
+                  <p class="video-caption"><b>Incoterms Explained: EXW, FOB, CIF, DDP and More</b>FinDucation<span class="video-tema">Logística</span></p>
+               </div>
+               <div class="video-card" data-tema="dados">
                   <button class="video-facade" type="button" data-video-id="yZvFH7B6gKI"
                      data-video-title="What Is Data Analytics? An Introduction - CareerFoundry" aria-label="Reproduzir o vídeo What Is Data Analytics? An Introduction, do canal CareerFoundry">
                      <span class="video-thumb">
@@ -267,9 +273,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>What Is Data Analytics? An Introduction</b>CareerFoundry</p>
+                  <p class="video-caption"><b>What Is Data Analytics? An Introduction</b>CareerFoundry<span class="video-tema">Dados</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="dados">
                   <button class="video-facade" type="button" data-video-id="wR0jg0eQsZA"
                      data-video-title="Database Tutorial for Beginners - Lucid Software" aria-label="Reproduzir o vídeo Database Tutorial for Beginners, do canal Lucid Software">
                      <span class="video-thumb">
@@ -277,9 +283,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>Database Tutorial for Beginners</b>Lucid Software</p>
+                  <p class="video-caption"><b>Database Tutorial for Beginners</b>Lucid Software<span class="video-tema">Dados</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="dados">
                   <button class="video-facade" type="button" data-video-id="zsjvFFKOm3c"
                      data-video-title="SQL Explained in 100 Seconds - Fireship" aria-label="Reproduzir o vídeo SQL Explained in 100 Seconds, do canal Fireship">
                      <span class="video-thumb">
@@ -287,9 +293,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>SQL Explained in 100 Seconds</b>Fireship</p>
+                  <p class="video-caption"><b>SQL Explained in 100 Seconds</b>Fireship<span class="video-tema">Dados</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="dados">
                   <button class="video-facade" type="button" data-video-id="OW5OgsLpDCQ"
                      data-video-title="What is ETL (Extract, Transform, Load)? - IBM Technology" aria-label="Reproduzir o vídeo What is ETL (Extract, Transform, Load)?, do canal IBM Technology">
                      <span class="video-thumb">
@@ -297,9 +303,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>What is ETL (Extract, Transform, Load)?</b>IBM Technology</p>
+                  <p class="video-caption"><b>What is ETL (Extract, Transform, Load)?</b>IBM Technology<span class="video-tema">Dados</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="dados">
                   <button class="video-facade" type="button" data-video-id="-bSkREem8dM"
                      data-video-title="Database vs Data Warehouse vs Data Lake - Alex The Analyst" aria-label="Reproduzir o vídeo Database vs Data Warehouse vs Data Lake, do canal Alex The Analyst">
                      <span class="video-thumb">
@@ -307,9 +313,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>Database vs Data Warehouse vs Data Lake</b>Alex The Analyst</p>
+                  <p class="video-caption"><b>Database vs Data Warehouse vs Data Lake</b>Alex The Analyst<span class="video-tema">Dados</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="dados">
                   <button class="video-facade" type="button" data-video-id="j-0cUmUyb-Y"
                      data-video-title="Big Data - TED-Ed" aria-label="Reproduzir o vídeo Big Data, do canal TED-Ed">
                      <span class="video-thumb">
@@ -317,9 +323,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>Big Data</b>TED-Ed</p>
+                  <p class="video-caption"><b>Big Data</b>TED-Ed<span class="video-tema">Dados</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="dados">
                   <button class="video-facade" type="button" data-video-id="r5_34YnCmMY"
                      data-video-title="Telling Stories with Data in 3 Steps - Harvard Business Review" aria-label="Reproduzir o vídeo Telling Stories with Data in 3 Steps, do canal Harvard Business Review">
                      <span class="video-thumb">
@@ -327,9 +333,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>Telling Stories with Data in 3 Steps</b>Harvard Business Review</p>
+                  <p class="video-caption"><b>Telling Stories with Data in 3 Steps</b>Harvard Business Review<span class="video-tema">Dados</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="dados">
                   <button class="video-facade" type="button" data-video-id="kGPr-RYZT2o"
                      data-video-title="Power BI Explained In 5 Minutes - Simplilearn" aria-label="Reproduzir o vídeo Power BI Explained In 5 Minutes, do canal Simplilearn">
                      <span class="video-thumb">
@@ -337,9 +343,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>Power BI Explained In 5 Minutes</b>Simplilearn</p>
+                  <p class="video-caption"><b>Power BI Explained In 5 Minutes</b>Simplilearn<span class="video-tema">Dados</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="dados">
                   <button class="video-facade" type="button" data-video-id="uPsUjKLHLAg"
                      data-video-title="Data Governance Explained in 5 Minutes - IBM Technology" aria-label="Reproduzir o vídeo Data Governance Explained in 5 Minutes, do canal IBM Technology">
                      <span class="video-thumb">
@@ -347,11 +353,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>Data Governance Explained in 5 Minutes</b>IBM Technology</p>
+                  <p class="video-caption"><b>Data Governance Explained in 5 Minutes</b>IBM Technology<span class="video-tema">Dados</span></p>
                </div>
-            </div>
-            <div class="lined-elements" id="videos-ia" role="tabpanel" aria-labelledby="aba-ia" tabindex="0" hidden>
-               <div class="video-card">
+               <div class="video-card" data-tema="ia">
                   <button class="video-facade" type="button" data-video-id="a0_lo_GDcFw"
                      data-video-title="What Is Artificial Intelligence? Crash Course AI #1 - CrashCourse" aria-label="Reproduzir o vídeo What Is Artificial Intelligence? Crash Course AI #1, do canal CrashCourse">
                      <span class="video-thumb">
@@ -359,9 +363,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>What Is Artificial Intelligence? Crash Course AI #1</b>CrashCourse</p>
+                  <p class="video-caption"><b>What Is Artificial Intelligence? Crash Course AI #1</b>CrashCourse<span class="video-tema">IA</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="ia">
                   <button class="video-facade" type="button" data-video-id="qYNweeDHiyU"
                      data-video-title="AI, Machine Learning, Deep Learning and Generative AI Explained - IBM Technology" aria-label="Reproduzir o vídeo AI, Machine Learning, Deep Learning and Generative AI Explained, do canal IBM Technology">
                      <span class="video-thumb">
@@ -369,9 +373,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>AI, Machine Learning, Deep Learning and Generative AI Explained</b>IBM Technology</p>
+                  <p class="video-caption"><b>AI, Machine Learning, Deep Learning and Generative AI Explained</b>IBM Technology<span class="video-tema">IA</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="ia">
                   <button class="video-facade" type="button" data-video-id="PeMlggyqz0Y"
                      data-video-title="Machine Learning Explained in 100 Seconds - Fireship" aria-label="Reproduzir o vídeo Machine Learning Explained in 100 Seconds, do canal Fireship">
                      <span class="video-thumb">
@@ -379,9 +383,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>Machine Learning Explained in 100 Seconds</b>Fireship</p>
+                  <p class="video-caption"><b>Machine Learning Explained in 100 Seconds</b>Fireship<span class="video-tema">IA</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="ia">
                   <button class="video-facade" type="button" data-video-id="aircAruvnKk"
                      data-video-title="But what is a neural network? - 3Blue1Brown" aria-label="Reproduzir o vídeo But what is a neural network?, do canal 3Blue1Brown">
                      <span class="video-thumb">
@@ -389,9 +393,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>But what is a neural network?</b>3Blue1Brown</p>
+                  <p class="video-caption"><b>But what is a neural network?</b>3Blue1Brown<span class="video-tema">IA</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="ia">
                   <button class="video-facade" type="button" data-video-id="LPZh9BOjkQs"
                      data-video-title="Large Language Models explained briefly - 3Blue1Brown" aria-label="Reproduzir o vídeo Large Language Models explained briefly, do canal 3Blue1Brown">
                      <span class="video-thumb">
@@ -399,9 +403,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>Large Language Models explained briefly</b>3Blue1Brown</p>
+                  <p class="video-caption"><b>Large Language Models explained briefly</b>3Blue1Brown<span class="video-tema">IA</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="ia">
                   <button class="video-facade" type="button" data-video-id="cfqtFvWOfg0"
                      data-video-title="Why Large Language Models Hallucinate - IBM Technology" aria-label="Reproduzir o vídeo Why Large Language Models Hallucinate, do canal IBM Technology">
                      <span class="video-thumb">
@@ -409,9 +413,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>Why Large Language Models Hallucinate</b>IBM Technology</p>
+                  <p class="video-caption"><b>Why Large Language Models Hallucinate</b>IBM Technology<span class="video-tema">IA</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="ia">
                   <button class="video-facade" type="button" data-video-id="T-D1OfcDW1M"
                      data-video-title="What is Retrieval-Augmented Generation (RAG)? - IBM Technology" aria-label="Reproduzir o vídeo What is Retrieval-Augmented Generation (RAG)?, do canal IBM Technology">
                      <span class="video-thumb">
@@ -419,9 +423,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>What is Retrieval-Augmented Generation (RAG)?</b>IBM Technology</p>
+                  <p class="video-caption"><b>What is Retrieval-Augmented Generation (RAG)?</b>IBM Technology<span class="video-tema">IA</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="ia">
                   <button class="video-facade" type="button" data-video-id="FwOTs4UxQS4"
                      data-video-title="AI Agents, Clearly Explained - Jeff Su" aria-label="Reproduzir o vídeo AI Agents, Clearly Explained, do canal Jeff Su">
                      <span class="video-thumb">
@@ -429,9 +433,9 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>AI Agents, Clearly Explained</b>Jeff Su</p>
+                  <p class="video-caption"><b>AI Agents, Clearly Explained</b>Jeff Su<span class="video-tema">IA</span></p>
                </div>
-               <div class="video-card">
+               <div class="video-card" data-tema="ia">
                   <button class="video-facade" type="button" data-video-id="JfjpFJxIjeQ"
                      data-video-title="AI in supply chain and logistics - 10 Min For Supply Chain" aria-label="Reproduzir o vídeo AI in supply chain and logistics, do canal 10 Min For Supply Chain">
                      <span class="video-thumb">
@@ -439,9 +443,10 @@
                         <span class="video-play" aria-hidden="true"></span>
                      </span>
                   </button>
-                  <p class="video-caption"><b>AI in supply chain and logistics</b>10 Min For Supply Chain</p>
+                  <p class="video-caption"><b>AI in supply chain and logistics</b>10 Min For Supply Chain<span class="video-tema">IA</span></p>
                </div>
             </div>
+            <p class="video-vazio" id="videos-vazio" hidden>Nenhum vídeo encontrado. Tente outra palavra ou escolha "Todos".</p>
          </section>
 
          <!-- parte:contatos -->

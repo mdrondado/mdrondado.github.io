@@ -21,40 +21,43 @@ document.addEventListener("click", function (evento) {
   player.focus();
 });
 
-// Abas dos videos (Logistica, Dados, IA), no padrao de abas do WAI-ARIA:
-// clique ou setas esquerda/direita, Home e End.
-const abas = Array.from(document.querySelectorAll('.video-abas [role="tab"]'));
+// Filtro dos videos: o tema escolhido nos botoes (ou Todos) combinado com o
+// texto da busca, que procura no titulo, no canal e no nome do tema.
+const botoesTema = Array.from(document.querySelectorAll(".video-temas > button"));
+const busca = document.getElementById("busca-videos");
+const cards = Array.from(document.querySelectorAll("#lista-videos > .video-card"));
+const contagem = document.getElementById("contagem-videos");
+const vazio = document.getElementById("videos-vazio");
+let temaAtual = "todos";
 
-function mostrarAba(escolhida) {
-  for (const aba of abas) {
-    const ativa = aba === escolhida;
-    const painel = document.getElementById(aba.getAttribute("aria-controls"));
-    aba.setAttribute("aria-selected", ativa);
-    aba.tabIndex = ativa ? 0 : -1;
-    painel.hidden = !ativa;
-    // um video tocando numa aba escondida continuaria com som: volta a miniatura
-    if (!ativa) {
-      for (const player of painel.querySelectorAll("iframe")) {
-        player.replaceWith(miniaturas.get(player));
-        miniaturas.delete(player);
-      }
+// minusculas e sem acento, para "logistica" achar "Logística"
+const normalizar = (texto) => texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+function filtrar() {
+  const termos = normalizar(busca.value).split(/\s+/).filter(Boolean);
+  let visiveis = 0;
+  for (const card of cards) {
+    const texto = normalizar(card.querySelector(".video-caption").textContent);
+    const aparece = (temaAtual === "todos" || card.dataset.tema === temaAtual)
+      && termos.every((termo) => texto.includes(termo));
+    card.hidden = !aparece;
+    if (aparece) visiveis++;
+    // um video tocando num card escondido continuaria com som: volta a miniatura
+    const player = card.querySelector("iframe");
+    if (!aparece && player) {
+      player.replaceWith(miniaturas.get(player));
+      miniaturas.delete(player);
     }
   }
+  contagem.textContent = visiveis === 1 ? "1 vídeo" : visiveis + " vídeos";
+  vazio.hidden = visiveis > 0;
 }
 
-for (const aba of abas) {
-  aba.addEventListener("click", () => mostrarAba(aba));
-  aba.addEventListener("keydown", (evento) => {
-    const atual = abas.indexOf(aba);
-    const destino = {
-      ArrowRight: abas[(atual + 1) % abas.length],
-      ArrowLeft: abas[(atual - 1 + abas.length) % abas.length],
-      Home: abas[0],
-      End: abas[abas.length - 1],
-    }[evento.key];
-    if (!destino) return;
-    evento.preventDefault();
-    destino.focus();
-    mostrarAba(destino);
+for (const botao of botoesTema) {
+  botao.addEventListener("click", () => {
+    temaAtual = botao.dataset.tema;
+    for (const outro of botoesTema) outro.setAttribute("aria-pressed", outro === botao);
+    filtrar();
   });
 }
+busca.addEventListener("input", filtrar);

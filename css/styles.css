@@ -391,16 +391,24 @@ section {
   outline-offset: 3px;
 }
 
-/* seletor de tema dos videos (abas controladas por js/index.js) */
-.video-abas {
+/* filtro dos videos: tema e busca (js/index.js) */
+.video-filtros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  margin: 10px 0 30px;
+}
+
+.video-temas {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  margin: 10px 0 30px;
 }
 
-.video-abas > button {
+.video-temas > button {
   padding: 8px 18px;
   border: 2px solid var(--accent);
   border-radius: 10px;
@@ -412,24 +420,66 @@ section {
   transition: .2s ease background-color, .2s ease color;
 }
 
-.video-abas > button:hover {
+.video-temas > button:hover {
   background-color: rgba(47, 111, 237, .1);
 }
 
-.video-abas > button[aria-selected="true"] {
+.video-temas > button[aria-pressed="true"] {
   background-color: var(--accent);
   color: white;
 }
 
-.video-abas > button:focus-visible,
-[role="tabpanel"]:focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: 3px;
+.video-busca {
+  width: 100%;
+  max-width: 420px;
 }
 
-/* .lined-elements usa display: flex, que venceria o atributo hidden */
-[role="tabpanel"][hidden] {
-  display: none;
+.video-busca > input {
+  width: 100%;
+  padding: 9px 14px;
+  border: 1px solid rgba(0, 0, 0, 30%);
+  border-radius: 10px;
+  font: inherit;
+}
+
+.video-temas > button:focus-visible,
+.video-busca > input:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.video-contagem {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 60%);
+}
+
+.video-vazio {
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+
+/* nome do tema no rodape de cada video */
+.video-tema {
+  display: block;
+  width: fit-content;
+  margin: 4px auto 0;
+  padding: 1px 8px;
+  border-radius: 8px;
+  background-color: rgba(47, 111, 237, .12);
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* texto que so leitores de tela anunciam */
+.visualmente-oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .video-card > .video-caption {
