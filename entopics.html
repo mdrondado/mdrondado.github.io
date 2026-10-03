@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
    <meta charset="UTF-8">
@@ -26,29 +26,24 @@
 
 <body>
    <div class="App">
+      <!-- parte:cabecalho -->
       <header class="container-header">
          <div class="header-main-title">
             <div>
-               <img src="images/logotipo_novo.jpg" height="230" width="530"
-               alt="Emblema do site Maikom's Website, com as palavras Logistics e Information Technology">
+               <img src="images/logotipo_novo.jpg" height="230" width="530" alt="Emblema do site Maikom's Website, com as palavras Logistics e Information Technology">
             </div>
-            <nav class="header-main-nav">
-               <a class="not-selected" href="index.html">
-                  Home
-               </a>
-               <a class="not-selected" id="curriculum" href="curriculo.html">
-                  Currículo
-               </a> 
-               <!-- <a class="not-selected" id="personal" href="pessoal.html">
-                  Pessoal
-               </a> -->
+            <nav class="header-main-nav" aria-label="Navegação principal">
+               <a class="not-selected" href="index.html">Home</a>
+               <a class="not-selected" href="curriculo.html">Currículo</a>
+               <a class="not-selected" href="https://privado.mdrondado.workers.dev/entrar">Área restrita</a>
             </nav>
          </div>
       </header>
+      <!-- /parte:cabecalho -->
 
       <div class="principal">
          <div class="container-sessao margin-bottom">
-            <div class="caixaCentro margin-bottom">
+            <div class="caixaCentro margin-bottom" lang="en">
                <h1>
                   English Learning Subjects
                </h1>
@@ -63,24 +58,20 @@
                </p>
             </div>
             <div class="caixaCentro margin-bottom">
-               <iframe src="https://novoinglesquadro.netlify.app/" width="706" height="910" frameborder="0" border="0"
+               <iframe class="quadro-embutido" src="https://novoinglesquadro.netlify.app/" title="Quadro com tópicos relevantes da língua inglesa" width="706" height="910" style="aspect-ratio: 706 / 910;" frameborder="0" border="0"
                   cellspacing="0" loading="lazy">
                </iframe>
             </div>
          </div>
       </div>
 
+      <!-- parte:rodape -->
       <footer class="footer-main">
          <div class="container-footer">
-            <h5 class="container-nome">
-               Desenvolvido pelo autor. &nbsp
-               <b style="font-size:15px">
-                  &#128142;
-               </b>
-               &nbsp Agradeço sua visita! &nbsp
-            </h5>
+            <h5 class="container-nome">Desenvolvido pelo autor. &nbsp<b style="font-size:15px">&#128142;</b>&nbsp Agradeço sua visita!</h5>
          </div>
       </footer>
+      <!-- /parte:rodape -->
    </div>
 </body>
 

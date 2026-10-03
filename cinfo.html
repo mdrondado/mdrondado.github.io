@@ -26,25 +26,20 @@
 
 <body>
    <div class="App">
+      <!-- parte:cabecalho -->
       <header class="container-header">
          <div class="header-main-title">
             <div>
-               <img src="images/logotipo_novo.jpg" height="230" width="530"
-               alt="Emblema do site Maikom's Website, com as palavras Logistics e Information Technology">
+               <img src="images/logotipo_novo.jpg" height="230" width="530" alt="Emblema do site Maikom's Website, com as palavras Logistics e Information Technology">
             </div>
-            <nav class="header-main-nav">
-               <a class="not-selected" href="index.html">
-                  Home
-               </a>
-               <a class="not-selected" id="curriculum" href="curriculo.html">
-                  Currículo
-               </a> 
-               <!-- <a class="not-selected" id="personal" href="pessoal.html">
-                  Pessoal
-               </a> -->
+            <nav class="header-main-nav" aria-label="Navegação principal">
+               <a class="not-selected" href="index.html">Home</a>
+               <a class="not-selected" href="curriculo.html">Currículo</a>
+               <a class="not-selected" href="https://privado.mdrondado.workers.dev/entrar">Área restrita</a>
             </nav>
          </div>
       </header>
+      <!-- /parte:cabecalho -->
            
         <div class="principal margin-bottom">
             <div class="container-sessao margin-bottom">
@@ -60,23 +55,19 @@
             </div>
 
             <div class="caixaCentro margin-bottom">
-               <iframe src="https://silver-pithivier-116f6c.netlify.app/" width="707" height="959" frameborder="0" border="0"
+               <iframe class="quadro-embutido" src="https://silver-pithivier-116f6c.netlify.app/" title="Currículo em formato de infográfico" width="707" height="959" style="aspect-ratio: 707 / 959;" frameborder="0" border="0"
                   cellspacing="0" loading="lazy">
                </iframe>
             </div>
         </div>
 
-        <footer class="footer-main">
+      <!-- parte:rodape -->
+      <footer class="footer-main">
          <div class="container-footer">
-            <h5 class="container-nome">
-               Desenvolvido pelo autor. &nbsp
-               <b style="font-size:15px">
-                  &#128142;
-               </b>
-               &nbsp Agradeço sua visita! &nbsp
-            </h5>
+            <h5 class="container-nome">Desenvolvido pelo autor. &nbsp<b style="font-size:15px">&#128142;</b>&nbsp Agradeço sua visita!</h5>
          </div>
       </footer>
+      <!-- /parte:rodape -->
     </div>
     
 </body>

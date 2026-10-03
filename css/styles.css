@@ -1,4 +1,4 @@
-/******* START styles applyied in all pages *******/
+/******* START styles applied in all pages *******/
 
 * {
   box-sizing: border-box;
@@ -35,16 +35,6 @@ a:visited {
 
 html {
   scroll-behavior: smooth;
-}
-
-ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-}
-
-li {
-  margin-bottom: 15px;
 }
 
 img {
@@ -188,7 +178,12 @@ nav .not-selected{
 #photo-curriculum {
   margin-top: 80px;
 }
-/******* END styles applyied in all pages *******/
+.caixaCentro {
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+/******* END styles applied in all pages *******/
 
 /******* START styles for index.html *******/
 
@@ -286,29 +281,6 @@ section {
 .post-card-em-construcao:hover {
   transform: none;
   box-shadow: none;
-}
-
-.link-contacts {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 6px;
-  margin: 20px 0px;
-  background-color: rgb(219, 245, 255);
-  padding: 30px 60px;
-}
-
-.link-contacts a {
-   text-decoration: none;
-   font-style: 20px;
-}
-
-.link-contacts a:hover {
-   text-decoration: underline;
-}
-
-#contato {
-  font-weight: 600;
 }
 
 .container-contatos {
@@ -433,7 +405,7 @@ section {
 
 /******* END styles for index.html *******/
 
-/******* START styles for curriculo.html *******/
+/******* START styles for the game pages (mmetro, ottd, factorio) *******/
 
 .texts-box {
   display:flex;
@@ -444,12 +416,23 @@ section {
   margin-right: 25px;
 }
 
+.mm-image {
+  width: 100%;
+  max-width: 450px;
+  max-height: 450px;
+  height: auto;
+}
+
 .texts-image{
   width: 90%;
   margin-left: 25px;
   margin-right: 25px;
   margin-bottom: 20px;
 }
+
+/******* END styles for the game pages *******/
+
+/******* START styles for curriculo.html *******/
 
 .logotipos-empresas {
   display: flex;
@@ -469,12 +452,6 @@ section {
   margin: 10px;
 }
 
-.caixaCentro {
-  align-items: center;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
 .key-words {
   padding: 0px 10px;
 }
@@ -491,25 +468,22 @@ section {
 /******* END styles for curriculo.html *******/
 
 
-/******* START styles for cinfo.html *******/
+/******* START styles for cinfo.html and entopics.html *******/
 
 .caixaCurriculo {
   width: 100%;
   align-items: center;
 }
 
-/******* END styles for cinfo.html *******/
-
-/******* START styles for mmetro.html *******/
-
-.mm-image {
-  max-width: 450px;
-  max-height: 450px;
+/* pagina externa embutida: encolhe no celular mantendo a proporcao */
+.quadro-embutido {
+  height: auto;
+  border: 0;
 }
 
+/******* END styles for cinfo.html and entopics.html *******/
 
-/******* END styles for mmetro.html *******/
-
+/******* START styles for acesso.html *******/
 
 #botao-acesso {
   padding: 10px;
@@ -524,3 +498,5 @@ section {
 #botao-acesso:hover {
   background-color: rgb(73, 73, 255);
 }
+
+/******* END styles for acesso.html *******/

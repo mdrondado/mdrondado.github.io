@@ -25,6 +25,7 @@
 
 <body>
    <div class="App">
+      <!-- parte:cabecalho -->
       <header class="container-header">
          <div class="header-main-title">
             <div>
@@ -32,11 +33,12 @@
             </div>
             <nav class="header-main-nav" aria-label="Navegação principal">
                <a class="not-selected" href="index.html">Home</a>
-               <a class="selected" id="curriculum" href="curriculo.html" aria-current="page">Currículo</a>
-               <!-- <a class="not-selected" id="personal" href="pessoal.html">Pessoal</a> -->
+               <a class="selected" href="curriculo.html" aria-current="page">Currículo</a>
+               <a class="not-selected" href="https://privado.mdrondado.workers.dev/entrar">Área restrita</a>
             </nav>
          </div>
       </header>
+      <!-- /parte:cabecalho -->
 
       <div class="principal">
          <div class="container-sessao">
@@ -97,7 +99,8 @@
                </div>
             </div>
          </div>
-         
+
+         <div class="container-sessao">
             <h1>Experiência</h1>
             <div class="logotipos-empresas">
                <div>
@@ -139,7 +142,7 @@
             </div>
          </div>
 
-         <!-- can be implemented as a component -->
+         <!-- parte:contatos -->
          <div class="container-contatos">
             <a id="contacts" href="https://wa.me/5511963216857" target="_blank" rel="noopener noreferrer">
                <img src="images/logo-whatsapp.png" height="50" width="50" alt="imagem link para acesso ao whatsapp do autor" loading="lazy">
@@ -160,13 +163,16 @@
             </a>
             -->
          </div>
-         <!-- can be implemented as a component -->
+         <!-- /parte:contatos -->
+      </div>
 
+      <!-- parte:rodape -->
       <footer class="footer-main">
          <div class="container-footer">
             <h5 class="container-nome">Desenvolvido pelo autor. &nbsp<b style="font-size:15px">&#128142;</b>&nbsp Agradeço sua visita!</h5>
          </div>
       </footer>
+      <!-- /parte:rodape -->
    </div>
 </body>
 </html>

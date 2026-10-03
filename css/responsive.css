@@ -1,9 +1,5 @@
 @media screen and (max-width: 700px) {
 
-  .texts-box div {
-    margin-bottom: 25px;
-  }
-
   .lined-elements div {
     margin-bottom: 20px;
   }
@@ -13,14 +9,6 @@
     justify-content: space-around;
     width: 100px;
     height: 300px;
-  }
-
-  .container-contatos > div {
-    margin-top: 15px;
-  }
-
-  .link-contacts {
-    align-self: flex-start;
   }
 
 }
