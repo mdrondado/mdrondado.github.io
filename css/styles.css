@@ -391,6 +391,47 @@ section {
   outline-offset: 3px;
 }
 
+/* seletor de tema dos videos (abas controladas por js/index.js) */
+.video-abas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0 30px;
+}
+
+.video-abas > button {
+  padding: 8px 18px;
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+  background: none;
+  color: var(--accent-dark);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s ease background-color, .2s ease color;
+}
+
+.video-abas > button:hover {
+  background-color: rgba(47, 111, 237, .1);
+}
+
+.video-abas > button[aria-selected="true"] {
+  background-color: var(--accent);
+  color: white;
+}
+
+.video-abas > button:focus-visible,
+[role="tabpanel"]:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* .lined-elements usa display: flex, que venceria o atributo hidden */
+[role="tabpanel"][hidden] {
+  display: none;
+}
+
 .video-card > .video-caption {
   margin: 8px 0 0;
   padding: 0 10px;
