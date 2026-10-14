@@ -28,7 +28,7 @@ const busca = document.getElementById("busca-videos");
 const cards = Array.from(document.querySelectorAll("#lista-videos > .video-card"));
 const contagem = document.getElementById("contagem-videos");
 const vazio = document.getElementById("videos-vazio");
-let temaAtual = "todos";
+let temaAtual = "logistica"; // o tema que a pagina abre filtrada; o botao dele vem marcado no HTML
 
 // minusculas e sem acento, para "logistica" achar "Logística"
 const normalizar = (texto) => texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -61,3 +61,4 @@ for (const botao of botoesTema) {
   });
 }
 busca.addEventListener("input", filtrar);
+filtrar();
