@@ -277,12 +277,6 @@ section {
   box-shadow: 0 12px 28px rgba(21, 41, 79, 0.18);
 }
 
-/* card sem link nao deve se comportar como clicavel */
-.post-card-em-construcao:hover {
-  transform: none;
-  box-shadow: none;
-}
-
 .container-contatos {
   display: flex;
   flex-direction: row;
